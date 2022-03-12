@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en" class="md:tw-overflow-y-auto">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/img/favicon.png" type="image/png" data-react-helmet="true">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="theme-color" content="#000000" data-react-helmet="true">
+    <meta name="description"
+        content="Magic Eden is the leading NFT Marketplace on Solana. Home to the next generation of digital creators. Discover the best and latest Solana NFT collections."
+        data-react-helmet="true">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Magic Eden" data-react-helmet="true">
+    <meta property="og:url" content="https://magiceden.io" data-react-helmet="true">
+    <meta property="og:image"
+        content="https://imagedelivery.net/E-VnZk4fwouzlzwX_qz4fg/532afb9b-8805-424d-8f85-da5c3e0f8600/public"
+        data-react-helmet="true">
+    <meta property="og:description"
+        content="Magic Eden is the leading NFT Marketplace on Solana. Home to the next generation of digital creators. Discover the best and latest Solana NFT collections."
+        data-react-helmet="true">
+    <meta name="twitter:title" content="Magic Eden" data-react-helmet="true">
+    <meta name="twitter:description"
+        content="Magic Eden is the leading NFT Marketplace on Solana. Home to the next generation of digital creators. Discover the best and latest Solana NFT collections."
+        data-react-helmet="true">
+    <meta name="twitter:image"
+        content="https://imagedelivery.net/E-VnZk4fwouzlzwX_qz4fg/532afb9b-8805-424d-8f85-da5c3e0f8600/public"
+        data-react-helmet="true">
+    <meta name="twitter:card" content="summary_large_image" data-react-helmet="true">
+    <meta name="twitter:site" content="@MagicEden" data-react-helmet="true">
+    <meta name="google-play-app" content="app-id=io.magiceden.android">
+    <link rel="android-touch-icon" href="img/appIcon.png">
+    <link rel="apple-touch-icon" href="/img/logo.png">
+    <meta name="apple-itunes-app" content="app-id=1602924580">
+    <link rel="manifest" href="/manifest.json">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA=="
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <title>Magic Eden - NFT Marketplace</title>
+    <script type="text/javascript" async="" src="https://widget.intercom.io/widget/htawnd0o"></script>
+    <script async="" src="https://d.clarity.ms/s/0.6.32/clarity.js"></script>
+    <script async="" src="https://www.clarity.ms/tag/a8rrpnm3xy"></script>
+    <script type="text/javascript">
+        ! function (t, e, n, r, a, c, s) {
+            t[n] = t[n] || function () {
+                (t[n].q = t[n].q || []).push(arguments)
+            }, (c = e.createElement(r)).async = 1, c.src = "https://www.clarity.ms/tag/a8rrpnm3xy", (s = e
+                .getElementsByTagName(r)[0]).parentNode.insertBefore(c, s)
+        }(window, document, "clarity", "script")
+    </script>
+    <script>
+        window.markerConfig = {
+                destination: "62186e0f3ce39a05898856b1",
+                source: "snippet"
+            },
+            function (e, r, t) {
+                if (!e.__Marker) {
+                    e.__Marker = {};
+                    var a = [],
+                        s = {
+                            __cs: a
+                        };
+                    ["show", "hide", "isVisible", "capture", "cancelCapture", "unload", "reload",
+                        "isExtensionInstalled", "setReporter", "setCustomData", "on", "off"
+                    ].forEach((function (e) {
+                        s[e] = function () {
+                            var r = Array.prototype.slice.call(arguments);
+                            r.unshift(e), a.push(r)
+                        }
+                    })), e.Marker = s;
+                    var n = r.createElement("script");
+                    n.async = 1, n.src = "https://edge.marker.io/latest/shim.js";
+                    var i = r.getElementsByTagName("script")[0];
+                    i.parentNode.insertBefore(n, i)
+                }
+            }(window, document)
+    </script>
+    <!-- <script defer="defer" src="https://magiceden.io/static/js/main.91c709a0.js"></script> -->
+    <link href="https://magiceden.io/static/css/main.9550d4c9.css" rel="stylesheet">
+    <script async="" src="https://magiceden.io/cdn-cgi/bm/cv/669835187/api.js"></script>
+    <style type="text/css">
+        .resize-observer[data-v-8859cc6c] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            border: none;
+            background-color: transparent;
+            pointer-events: none;
+            display: block;
+            overflow: hidden;
+            opacity: 0
+        }
+
+        .resize-observer[data-v-8859cc6c] object {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: -1
+        }
+    </style>
+    <style type="text/css">
+        .styles-module_wrapper__1I_qj {
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            padding: 0px 60px 0px 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            box-sizing: border-box;
+        }
+
+        .styles-module_content__2jwZj {
+            margin: auto;
+            padding: 0;
+            width: 90%;
+            height: 100%;
+            max-height: 100%;
+            text-align: center;
+        }
+
+        .styles-module_slide__1zrfk {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .styles-module_image__2hdkJ {
+            max-height: 100%;
+            max-width: 100%;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .styles-module_close__2I1sI {
+            color: white;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 40px;
+            font-weight: bold;
+            opacity: 0.2;
+            cursor: pointer;
+        }
+
+        .styles-module_close__2I1sI:hover {
+            opacity: 1;
+        }
+
+        .styles-module_navigation__1pqAE {
+            height: 80%;
+            color: white;
+            cursor: pointer;
+            position: absolute;
+            font-size: 60px;
+            line-height: 60px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            opacity: 0.2;
+            padding: 0 15px;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .styles-module_navigation__1pqAE:hover {
+            opacity: 1;
+        }
+
+        @media (hover: none) {
+            .styles-module_navigation__1pqAE:hover {
+                opacity: 0.2;
+            }
+        }
+
+        .styles-module_prev__KqFRp {
+            left: 0;
+        }
+
+        .styles-module_next__1uQwZ {
+            right: 0;
+        }
+
+        @media (max-width: 900px) {
+            .styles-module_wrapper__1I_qj {
+                padding: 0;
+            }
+        }
+    </style>
+    <style type="text/css">
+        .react-horizontal-scrolling-menu--wrapper {
+            display: flex;
+        }
+
+        .react-horizontal-scrolling-menu--scroll-container {
+            display: flex;
+            height: max-content;
+            overflow-y: hidden;
+            position: relative;
+            width: 100%;
+        }
+
+        :export {
+            wrapper: react-horizontal-scrolling-menu--wrapper;
+            container: react-horizontal-scrolling-menu--scroll-container;
+        }
+    </style>
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-213621249-1"></script>
+    <style data-emotion="css" data-s=""></style>
+    <style id="erd_scroll_detection_scrollbar_style">
+        /* Created by the element-resize-detector library. */
+        .erd_scroll_detection_container>div::-webkit-scrollbar {
+            display: none;
+        }
+
+        .erd_scroll_detection_container_animation_active {
+            -webkit-animation-duration: 0.1s;
+            animation-duration: 0.1s;
+            -webkit-animation-name: erd_scroll_detection_container_animation;
+            animation-name: erd_scroll_detection_container_animation;
+        }
+
+        @-webkit-keyframes erd_scroll_detection_container_animation {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes erd_scroll_detection_container_animation {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="banner">
+        <div></div>
+    </div>
+    <div id="root">
+        <div style="">
+            <div>
+                <div class=" main page market-place">
+                    <div class="tw-w-full tw-flex tw-bg-gray-200 tw-z-50 tw-px-4">
+                        <div class="tw-hidden sm:tw-flex tw-flex-auto tw-justify-center">
+                            <ul class="tw-flex tw-justify-center">
+                                <li class="tw-text-xs tw-mr-4 tw-whitespace-nowrap"><span
+                                        class="tw-text-gray2-500">Volume 24h:&nbsp;&nbsp;</span><span
+                                        class="tw-text-pink-primary">54,195 SOL</span></li>
+                                <li class="tw-text-xs tw-mr-4 tw-whitespace-nowrap"><span
+                                        class="tw-text-gray2-500">Volume total:&nbsp;&nbsp;</span><span
+                                        class="tw-text-pink-primary">7,314,344 SOL</span></li>
+                            </ul>
+                        </div>
+                        <div class="tw-flex tw-items-center tw-ml-auto tw-flex-shrink-0">
+                            <div class="me-dropdown-container">
+                                <div class="cursor-pointer position-relative"><button role="button"
+                                        class="tw-flex tw-items-center"><span class="tw-text-xs">English</span><span
+                                            class="tw-ml-1"><svg stroke="currentColor" fill="none" stroke-width="2"
+                                                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                                                color="#f8f7f8" height="0.75rem" width="0.75rem"
+                                                xmlns="http://www.w3.org/2000/svg" style="color: rgb(248, 247, 248);">
+                                                <polyline points="6 9 12 15 18 9"></polyline>
+                                            </svg></span></button></div>
+                                <div aria-label="dropdown-list" class="dropdown tw-text-secondary"
+                                    data-popper-reference-hidden="true" data-popper-escaped="true"
+                                    data-popper-placement="bottom-start"
+                                    style="position: absolute; inset: 0px auto auto 0px; width: fit-content; transform: translate(1302px, 27px);">
+                                    <ul class="tw-py-2 tw-px-3 tw-text-white-1">
+                                        <li class="tw-cursor-pointer">
+                                            <div class="tw-border-soft tw-border-b tw-border-solid">English</div>
+                                        </li>
+                                        <li class="tw-cursor-pointer">
+                                            <div class="tw-border-soft tw-border-b tw-border-solid">한국어</div>
+                                        </li>
+                                        <li class="tw-cursor-pointer">
+                                            <div class="tw-border-soft tw-border-b tw-border-solid">日本語</div>
+                                        </li>
+                                        <li class="tw-cursor-pointer">
+                                            <div class="tw-border-soft tw-border-b tw-border-solid">Türkçe</div>
+                                        </li>
+                                        <li class="tw-cursor-pointer">
+                                            <div class="tw-border-soft tw-border-b tw-border-solid">Tiếng Việt</div>
+                                        </li>
+                                        <li class="tw-cursor-pointer">
+                                            <div class="">Русский</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <header
+                        class="tw-px-4 tw-w-full tw-h-80px tw-flex tw-sticky tw-top-0 tw-z-30 tw-transition-colors tw-bg-gray-100">
+                        <nav class="tw-w-full tw-flex tw-items-center">
+                            <div class="tw-flex tw-flex-auto tw-items-center">
+                                <div class="tw-flex tw-items-center"><button
+                                        class="tw-p-2 md:tw-p-4 hover:tw-bg-gray-500 tw-rounded-lg lg:tw-hidden HeaderV2_collapseBtn__KfrfG"><svg
+                                            stroke="currentColor" fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 448 512" color="#f8f7f8" height="1.5rem" width="1.5rem"
+                                            xmlns="http://www.w3.org/2000/svg" style="color: rgb(248, 247, 248);">
+                                            <path
+                                                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                                            </path>
+                                        </svg></button><a class="navbar-brand" href="/"><img
+                                            class="logo HeaderV2_logo__Wyfk+"
+                                            src="static/media/logo.ca418d755e6ce4e95fd276056b9285f2.svg"
+                                            alt="sticky brand-logo"></a></div>
+                                <div class="tw-flex-auto tw-px-2 tw-ml-8 tw-hidden lg:tw-inline-flex tw-justify-center">
+                                    <div
+                                        class="nav-item--search-bar tw-w-full tw-max-w-2xl lg:tw-px-0 HeaderV2_search__UUbij css-b62m3t-container">
+                                        <span id="react-select-5-live-region" class="css-7pg0cj-a11yText"></span><span
+                                            aria-live="polite" aria-atomic="false" aria-relevant="additions text"
+                                            class="css-7pg0cj-a11yText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-items-center tw-space-x-2">
+                                <div class="tw-block lg:tw-hidden tw-ml-2"><button
+                                        class="tw-w-10 tw-h-10 hover:tw-bg-gray-500 tw-inline-flex tw-justify-center tw-items-center tw-transform active:tw-scale-90"><svg
+                                            stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                            stroke-linecap="round" stroke-linejoin="round" color="#f8f7f8" height="24"
+                                            width="24" xmlns="http://www.w3.org/2000/svg"
+                                            style="color: rgb(248, 247, 248);">
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        </svg></button></div><a
+                                    class="tw-text-white-1 tw-items-center tw-px-2 tw-rounded-md tw-hidden md:tw-flex"
+                                    href="/me">Sell</a>
+                                <div class="tw-ml-2 tw-hidden md:tw-inline-flex">
+                                    <div class="tw-flex tw-items-center ButtonGroup_group__UbpA8"><button
+                                            class="tw-inline-flex tw-justify-center tw-items-center tw-rounded-md tw-text-white-1 BorderedButton_btn__nenER tw-p-0"><a
+                                                class="tw-flex tw-w-full" href="/me"><span class="tw-px-2"><svg
+                                                        stroke="currentColor" fill="none" stroke-width="2"
+                                                        viewBox="0 0 24 24" stroke-linecap="round"
+                                                        stroke-linejoin="round" color="#e42575" height="24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        style="color: rgb(228, 37, 117);">
+                                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                                        <circle cx="12" cy="7" r="4"></circle>
+                                                    </svg></span></a></button><button
+                                            class="tw-inline-flex tw-justify-center tw-items-center tw-rounded-md tw-text-white-1 BorderedButton_btn__nenER">Select
+                                            Wallet</button></div>
+                                </div>
+                            </div>
+                        </nav>
+                    </header>
+                    <div class="tw-flex tw-w-full">
+                        <div
+                            class="tw-relative tw-flex tw-flex-col tw-flex-auto tw-ml-0 tw-py-0 tw-mt-32 content__slim lg:tw-ml-80px">
+                            <div class="tw-flex tw-flex-column">
+                                <div
+                                    class="collection-info tw-flex tw-flex-col tw-items-center tw-w-full tw-p-2 tw-relative">
+                                    <div class="tw-w-40 tw-h-40"><img loading="lazy"
+                                            class=" tw-border-solid tw-border-4 tw-object-center tw-object-cover tw-rounded-full tw-w-40 tw-h-40 tw-border-white"
+                                            src="https://dl.airtable.com/.attachmentThumbnails/432ec8eb166f8ad85f73a2b8ebcb8ddc/ce586bff"
+                                            alt="avatar" style="background-color: transparent;"></div>
+                                    <div class="tw-flex tw-items-center tw-mt-4"></div>
+                                    <h1 class="tw-text-4xl tw-mt-4 tw-max-w-2xl tw-text-center">Kingdom of Dwarves:
+                                        Whitelist Tokens</h1>
+                                    <div role="group"
+                                        class="tw-flex tw-h-10  tw-relative lg:tw-absolute lg:tw-top-20 lg:tw-right-6 tw-mb-2 tw-mt-4 lg:tw-mt-0">
+                                        <div class="" data-tooltipped="" aria-describedby="tippy-tooltip-1"
+                                            data-original-title="Report this collection" style="display: inline;">
+                                            <button role="button"
+                                                class="hover:tw-opacity-80 tw-w-8 tw-h-8 lg:tw-w-10 lg:tw-h-10 tw-flex tw-justify-center tw-items-center"><img
+                                                    src="static/media/flag2.5216bec86cb7c2c5ea436a5a7db2669b.svg"
+                                                    class="tw-w-8 lg:tw-w-10"></button></div>
+                                        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal"
+                                            aria-hidden="true" style="backdrop-filter: blur(1px);">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div
+                                                    class="modal-content position-relative tw-bg-gray-100 tw-rounded-20px tw-p-2 tw-border-gray-500">
+                                                    <div class="modal-header">
+                                                        <div>
+                                                            <h2 class="tw-text-xl tw-font-bold">Report this collection
+                                                            </h2>
+                                                        </div><span aria-hidden="true" class="modal-close-btn"></span>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="d-flex flex-column">
+                                                            <div class="tw-text-white-1 tw-font-bold">I think this
+                                                                collection is</div>
+                                                            <div class="me-dropdown-container tw-mt-2 theme-me-dark-1">
+                                                                <div class="cursor-pointer position-relative"><input
+                                                                        readonly="" class="no-border"
+                                                                        placeholder="Select a reason" value="">
+                                                                    <div
+                                                                        class="d-flex align-items-center h-100 chevron-down">
+                                                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAClSURBVHgB7ZKxEcIwDAClsABLpOOosgSZALIAUMEGmA0omYARqKGjcEdSeZbEkZMUKWSf0uvvfOez5f/GAIqisFTl8VKVp9uS+cPufOXuMu6wxQw9gJFE9jTjAR+Ifs3dr7jDxtnfJi+QtmabF/B39huT05ChdX+9n0YcCNTOflIRiTwZSEWk8gCCABIG2SDtxkciuTgwj0yPRPLFhEjsOyqKEqcHTRZEVAqKpxgAAAAASUVORK5CYII="
+                                                                            class="" alt="chevron-down"></div>
+                                                                </div>
+                                                                <div aria-label="dropdown-list"
+                                                                    class="dropdown tw-text-secondary"
+                                                                    data-popper-reference-hidden="true"
+                                                                    data-popper-escaped="true"
+                                                                    data-popper-placement="bottom-start"
+                                                                    style="position: absolute; inset: 0px auto auto 0px; width: 0px; transform: translate(0px, 204px);">
+                                                                    <div class="me-select dark-scroll-bar">
+                                                                        <div tabindex="0"
+                                                                            class="me-select-item tw-flex">Fake or
+                                                                            possible scam</div>
+                                                                        <div tabindex="0"
+                                                                            class="me-select-item tw-flex">Explicit and
+                                                                            sensitive content</div>
+                                                                        <div tabindex="0"
+                                                                            class="me-select-item tw-flex">IP
+                                                                            infringement</div>
+                                                                        <div tabindex="0"
+                                                                            class="me-select-item tw-flex">Derivative
+                                                                        </div>
+                                                                        <div tabindex="0"
+                                                                            class="me-select-item tw-flex">Other</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div><textarea class="input-dark-1 tw-mt-2"
+                                                                placeholder="More details"></textarea><button
+                                                                type="button"
+                                                                class="tw-inline-flex tw-justify-center tw-items-center tw-rounded-md tw-text-white-1 PlainButton_btn__CRXH4 tw-mt-8 PlainButton_disabled__o-JAq PlainButton_primary__22Ken"
+                                                                disabled="">Report</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pt-2">
+                                        <div>
+                                            <div class="row attributes attributes-row">
+                                                <div class="col-lg-3 col-6 attributes-column">
+                                                    <div
+                                                        class="p-3 bg-color-third d-flex flex-column border-radius-8px h-100 position-relative attributes-main">
+                                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD4SURBVHgB3ZXNEYIwEIVfGA/iiRLszBawArACpQOtDDrAEwkX1iyQ8WY2BDj4zfAzzNtskn1sgI1R7qXXfUFEuf2SeaMIb3t/Hk/HqyiBMeZug3IEQqBbmqalV2g60xptSGt9hgDWsb43fSvRg8V8IQBpzAHLacTKJSuQkmBjRFsUY2HvCtjC1o6laHCGdQq5dVr5HeRHDWIt7K/BPHP7QzUQ4HR2SzNZgkimBFNhIN2G4ASkqOKngqrnetRYiTEBN6yBhsqtZFdi+9RORf7vBIEWdjql1BjnbXZsYWvfYrYwpNBArzGRRNx13SNBcpF2U56U6Kxegw+CobhgOuqV7gAAAABJRU5ErkJggg=="
+                                                            alt="copy"><span
+                                                            class="fs-11px text-uppercase letter-spacing-3 text-truncate tw-text-secondary"
+                                                            title="Floor Price">Floor Price</span><span
+                                                            class="text-white fs-14px text-truncate attribute-value"
+                                                            title="2.38 ◎">2.38 ◎</span></div>
+                                                </div>
+                                                <div class="col-lg-3 col-6 attributes-column">
+                                                    <div
+                                                        class="p-3 bg-color-third d-flex flex-column border-radius-8px h-100 position-relative attributes-main">
+                                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD4SURBVHgB3ZXNEYIwEIVfGA/iiRLszBawArACpQOtDDrAEwkX1iyQ8WY2BDj4zfAzzNtskn1sgI1R7qXXfUFEuf2SeaMIb3t/Hk/HqyiBMeZug3IEQqBbmqalV2g60xptSGt9hgDWsb43fSvRg8V8IQBpzAHLacTKJSuQkmBjRFsUY2HvCtjC1o6laHCGdQq5dVr5HeRHDWIt7K/BPHP7QzUQ4HR2SzNZgkimBFNhIN2G4ASkqOKngqrnetRYiTEBN6yBhsqtZFdi+9RORf7vBIEWdjql1BjnbXZsYWvfYrYwpNBArzGRRNx13SNBcpF2U56U6Kxegw+CobhgOuqV7gAAAABJRU5ErkJggg=="
+                                                            alt="copy"><span
+                                                            class="fs-11px text-uppercase letter-spacing-3 text-truncate tw-text-secondary"
+                                                            title="Total Volume (ALL Time, ALL Marketplaces)">Total
+                                                            Volume (ALL Time, ALL Marketplaces)</span><span
+                                                            class="text-white fs-14px text-truncate attribute-value"
+                                                            title="534.63 ◎">534.63 ◎</span></div>
+                                                </div>
+                                                <div class="col-lg-3 col-6 attributes-column">
+                                                    <div
+                                                        class="p-3 bg-color-third d-flex flex-column border-radius-8px h-100 position-relative attributes-main">
+                                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD4SURBVHgB3ZXNEYIwEIVfGA/iiRLszBawArACpQOtDDrAEwkX1iyQ8WY2BDj4zfAzzNtskn1sgI1R7qXXfUFEuf2SeaMIb3t/Hk/HqyiBMeZug3IEQqBbmqalV2g60xptSGt9hgDWsb43fSvRg8V8IQBpzAHLacTKJSuQkmBjRFsUY2HvCtjC1o6laHCGdQq5dVr5HeRHDWIt7K/BPHP7QzUQ4HR2SzNZgkimBFNhIN2G4ASkqOKngqrnetRYiTEBN6yBhsqtZFdi+9RORf7vBIEWdjql1BjnbXZsYWvfYrYwpNBArzGRRNx13SNBcpF2U56U6Kxegw+CobhgOuqV7gAAAABJRU5ErkJggg=="
+                                                            alt="copy"><span
+                                                            class="fs-11px text-uppercase letter-spacing-3 text-truncate tw-text-secondary"
+                                                            title="Avg Sale Price (Last 24HR)">Avg Sale Price (Last
+                                                            24HR)</span><span
+                                                            class="text-white fs-14px text-truncate attribute-value"
+                                                            title="2.28 ◎">2.28 ◎</span></div>
+                                                </div>
+                                                <div class="col-lg-3 col-6 attributes-column">
+                                                    <div
+                                                        class="p-3 bg-color-third d-flex flex-column border-radius-8px h-100 position-relative attributes-main">
+                                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD4SURBVHgB3ZXNEYIwEIVfGA/iiRLszBawArACpQOtDDrAEwkX1iyQ8WY2BDj4zfAzzNtskn1sgI1R7qXXfUFEuf2SeaMIb3t/Hk/HqyiBMeZug3IEQqBbmqalV2g60xptSGt9hgDWsb43fSvRg8V8IQBpzAHLacTKJSuQkmBjRFsUY2HvCtjC1o6laHCGdQq5dVr5HeRHDWIt7K/BPHP7QzUQ4HR2SzNZgkimBFNhIN2G4ASkqOKngqrnetRYiTEBN6yBhsqtZFdi+9RORf7vBIEWdjql1BjnbXZsYWvfYrYwpNBArzGRRNx13SNBcpF2U56U6Kxegw+CobhgOuqV7gAAAABJRU5ErkJggg=="
+                                                            alt="copy"><span
+                                                            class="fs-11px text-uppercase letter-spacing-3 text-truncate tw-text-secondary"
+                                                            title="Total Listed Count">Total Listed Count</span><span
+                                                            class="text-white fs-14px text-truncate attribute-value"
+                                                            title="9">9</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="tw-relative tw-overflow-hidden tw-break-words read-more tw-mt-3 tw-max-w-2xl">
+                                        <div class="read-more__description" style="max-height: 150px;">
+                                            <p>Welcome to the Kingdom Of Dwarves Metaverse. Only selected Kingdom of Dwarves will get the once-in-a-lifetime opportunity to purchase VVIP Privatesale and VIP Presale tickets to the Kingdom Of Dwarves Metaverse.
+                                                This trip requires a special ticket, namely $KOD which can be used as currency in the game Kingdom Of Dwarves Metaverse.
+                                                Purchase $KOD can use 4 Currencies BTC, ETH, BNB and TRX
+                                                2 stages for purchasing $KOD:
+                                                 *The first stage is Private Sale (VVIP Ticket)
+                                                *The second stage is Presale
+                                                The best $KOD prices can only be obtained through this exclusive stage, and are available in very limited quantities.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="me-drawer tw-fixed tw-h-screen tw-bg-card-dark market-place__drawer tw-bg-card-dark tw-block md:tw-hidden full">
+                        <header
+                            class="tw-z-50 tw-flex tw-p-4 tw-text-lg tw-bg-card-dark tw-border-gray-500 tw-border-solid tw-border-b tw-sticky tw-top-0 tw-cursor-pointer">
+                            <div class="tw-flex-1 tw-self-start">Filters</div>
+                            <div class="tw-cursor-pointer tw-ml-auto collectionSidebar__collapse hover:tw-opacity-80">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#9C8FA8" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-arrow-left" color="#e42575">
+                                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                                    <polyline points="12 19 5 12 12 5"></polyline>
+                                </svg></div>
+                        </header>
+                        <div class="tw-flex tw-flex-col">
+                            <div class="me-collapsable">
+                                <div class="tw-flex tw-cursor-pointer tw-p-4 tw-text-lg me-border-y tw-border-gray-500">
+                                    <img src="/static/media/fi_list.9459d7092f900242f57fc9cdf169be40.svg" alt="icon"
+                                        class="tw-mr-2">
+                                    <div class="tw-flex-1 me-collapsable__title">Price filter</div><img
+                                        src="/static/media/fi_minus.09970afb84e113865dab7c58f4a144dc.svg"
+                                        alt="indicator">
+                                </div>
+                                <div class="tw-px-4 tw-pb-4">
+                                    <div class="me-price-filter d-flex flex-column p-12px">
+                                        <div class="me-dropdown-container mb-12px">
+                                            <div class="cursor-pointer position-relative"><input readonly=""
+                                                    class="no-border" disabled="" value="SOL">
+                                                <div class="d-flex align-items-center h-100 chevron-down"><img
+                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAClSURBVHgB7ZKxEcIwDAClsABLpOOosgSZALIAUMEGmA0omYARqKGjcEdSeZbEkZMUKWSf0uvvfOez5f/GAIqisFTl8VKVp9uS+cPufOXuMu6wxQw9gJFE9jTjAR+Ifs3dr7jDxtnfJi+QtmabF/B39huT05ChdX+9n0YcCNTOflIRiTwZSEWk8gCCABIG2SDtxkciuTgwj0yPRPLFhEjsOyqKEqcHTRZEVAqKpxgAAAAASUVORK5CYII="
+                                                        class="" alt="chevron-down"></div>
+                                            </div>
+                                            <div aria-label="dropdown-list" class="dropdown tw-text-secondary"
+                                                data-popper-reference-hidden="true" data-popper-escaped="true"
+                                                data-popper-placement="bottom-start"
+                                                style="position: absolute; inset: 0px auto auto 0px; width: 0px; transform: translate(0px, 204px);">
+                                                <div class="me-select dark-scroll-bar">
+                                                    <div tabindex="0"
+                                                        class="me-select-item tw-flex me-selected-item fw-500">
+                                                        <span><svg width="24" height="24" viewBox="0 0 24 24"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                                color="#e42575" class="me-10px">
+                                                                <path
+                                                                    d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"
+                                                                    stroke="currentColor" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M22 4L12 14.01L9 11.01" stroke="currentColor"
+                                                                    stroke-width="1.5" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></span>SOL</div>
+                                                    <div tabindex="0" class="me-select-item tw-flex"><span><svg
+                                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg" color="#594A68"
+                                                                class="me-10px">
+                                                                <path
+                                                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                                                    stroke="currentColor" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                            </svg></span>United States Dollar (USD)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-12px"><input type="number"
+                                                placeholder="Min"
+                                                class="cursor-initial me-input-box no-border border-radius-8px focus-highlight"
+                                                value=""><span class="to-connector">to</span><input type="number"
+                                                placeholder="Max"
+                                                class="cursor-initial me-input-box no-border border-radius-8px focus-highlight"
+                                                value=""></div><button type="button"
+                                            class="tw-inline-flex tw-justify-center tw-items-center tw-rounded-md tw-text-white-1 PlainButton_btn__CRXH4 PlainButton_bordered__3suwZ"
+                                            style="width: 100%;">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="me-collapsable">
+                                <div class="tw-flex tw-cursor-pointer tw-p-4 tw-text-lg me-border-y tw-border-gray-500">
+                                    <img src="/static/media/fi_list.9459d7092f900242f57fc9cdf169be40.svg" alt="icon"
+                                        class="tw-mr-2">
+                                    <div class="tw-flex-1 me-collapsable__title">Attributes filter</div><img
+                                        src="/static/media/fi_minus.09970afb84e113865dab7c58f4a144dc.svg"
+                                        alt="indicator">
+                                </div>
+                                <div class="tw-px-4 tw-pb-4">
+                                    <div class="tw-flex tw-flex-col">
+                                        <div class="tw-flex tw-flex-col tw-mt-2">
+                                            <div class="me-multi-select css-b62m3t-container"><span
+                                                    id="react-select-2-live-region"
+                                                    class="css-7pg0cj-a11yText"></span><span aria-live="polite"
+                                                    aria-atomic="false" aria-relevant="additions text"
+                                                    class="css-7pg0cj-a11yText"></span>
+                                                <div class=" css-12ezssu-control">
+                                                    <div class=" css-1hwfws3">
+                                                        <div>Metal</div>
+                                                        <div class=" css-ye28u3" data-value=""><input class=""
+                                                                autocapitalize="none" autocomplete="off"
+                                                                autocorrect="off" id="react-select-2-input"
+                                                                spellcheck="false" tabindex="0" type="text"
+                                                                aria-autocomplete="list" aria-expanded="false"
+                                                                aria-haspopup="true"
+                                                                aria-controls="react-select-2-listbox"
+                                                                aria-owns="react-select-2-listbox" role="combobox"
+                                                                aria-describedby="react-select-2-placeholder" value=""
+                                                                style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;">
+                                                        </div>
+                                                    </div>
+                                                    <div class=" css-693gid"><span class=" css-1hyfx7x"></span>
+                                                        <div class="me-1 css-693gid" aria-hidden="true"><img
+                                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAClSURBVHgB7ZKxEcIwDAClsABLpOOosgSZALIAUMEGmA0omYARqKGjcEdSeZbEkZMUKWSf0uvvfOez5f/GAIqisFTl8VKVp9uS+cPufOXuMu6wxQw9gJFE9jTjAR+Ifs3dr7jDxtnfJi+QtmabF/B39huT05ChdX+9n0YcCNTOflIRiTwZSEWk8gCCABIG2SDtxkciuTgwj0yPRPLFhEjsOyqKEqcHTRZEVAqKpxgAAAAASUVORK5CYII="
+                                                                alt="chevron-down"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tw-flex tw-flex-col tw-mt-2">
+                                            <div class="me-multi-select css-b62m3t-container"><span
+                                                    id="react-select-3-live-region"
+                                                    class="css-7pg0cj-a11yText"></span><span aria-live="polite"
+                                                    aria-atomic="false" aria-relevant="additions text"
+                                                    class="css-7pg0cj-a11yText"></span>
+                                                <div class=" css-12ezssu-control">
+                                                    <div class=" css-1hwfws3">
+                                                        <div>Token</div>
+                                                        <div class=" css-ye28u3" data-value=""><input class=""
+                                                                autocapitalize="none" autocomplete="off"
+                                                                autocorrect="off" id="react-select-3-input"
+                                                                spellcheck="false" tabindex="0" type="text"
+                                                                aria-autocomplete="list" aria-expanded="false"
+                                                                aria-haspopup="true"
+                                                                aria-controls="react-select-3-listbox"
+                                                                aria-owns="react-select-3-listbox" role="combobox"
+                                                                aria-describedby="react-select-3-placeholder" value=""
+                                                                style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;">
+                                                        </div>
+                                                    </div>
+                                                    <div class=" css-693gid"><span class=" css-1hyfx7x"></span>
+                                                        <div class="me-1 css-693gid" aria-hidden="true"><img
+                                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAClSURBVHgB7ZKxEcIwDAClsABLpOOosgSZALIAUMEGmA0omYARqKGjcEdSeZbEkZMUKWSf0uvvfOez5f/GAIqisFTl8VKVp9uS+cPufOXuMu6wxQw9gJFE9jTjAR+Ifs3dr7jDxtnfJi+QtmabF/B39huT05ChdX+9n0YcCNTOflIRiTwZSEWk8gCCABIG2SDtxkciuTgwj0yPRPLFhEjsOyqKEqcHTRZEVAqKpxgAAAAASUVORK5CYII="
+                                                                alt="chevron-down"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tw-flex tw-flex-col tw-mt-2">
+                                            <div class="me-multi-select css-b62m3t-container"><span
+                                                    id="react-select-4-live-region"
+                                                    class="css-7pg0cj-a11yText"></span><span aria-live="polite"
+                                                    aria-atomic="false" aria-relevant="additions text"
+                                                    class="css-7pg0cj-a11yText"></span>
+                                                <div class=" css-12ezssu-control">
+                                                    <div class=" css-1hwfws3">
+                                                        <div>Type</div>
+                                                        <div class=" css-ye28u3" data-value=""><input class=""
+                                                                autocapitalize="none" autocomplete="off"
+                                                                autocorrect="off" id="react-select-4-input"
+                                                                spellcheck="false" tabindex="0" type="text"
+                                                                aria-autocomplete="list" aria-expanded="false"
+                                                                aria-haspopup="true"
+                                                                aria-controls="react-select-4-listbox"
+                                                                aria-owns="react-select-4-listbox" role="combobox"
+                                                                aria-describedby="react-select-4-placeholder" value=""
+                                                                style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;">
+                                                        </div>
+                                                    </div>
+                                                    <div class=" css-693gid"><span class=" css-1hyfx7x"></span>
+                                                        <div class="me-1 css-693gid" aria-hidden="true"><img
+                                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAClSURBVHgB7ZKxEcIwDAClsABLpOOosgSZALIAUMEGmA0omYARqKGjcEdSeZbEkZMUKWSf0uvvfOez5f/GAIqisFTl8VKVp9uS+cPufOXuMu6wxQw9gJFE9jTjAR+Ifs3dr7jDxtnfJi+QtmabF/B39huT05ChdX+9n0YcCNTOflIRiTwZSEWk8gCCABIG2SDtxkciuTgwj0yPRPLFhEjsOyqKEqcHTRZEVAqKpxgAAAAASUVORK5CYII="
+                                                                alt="chevron-down"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/vendor/core.min.js"></script>
+    <script src="/assets/js/vendor/popper.min.js"></script>
+    <script src="/assets/js/vendor/bootstrap.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script>
+        window.intercomSettings = {
+            api_base: "https://api-iam.intercom.io",
+            app_id: "htawnd0o"
+        }
+    </script>
+    <script>
+        ! function () {
+            var t = window,
+                e = t.Intercom;
+            if ("function" == typeof e) e("reattach_activator"), e("update", t.intercomSettings);
+            else {
+                var n = document,
+                    a = function () {
+                        a.c(arguments)
+                    };
+                a.q = [], a.c = function (t) {
+                    a.q.push(t)
+                }, t.Intercom = a;
+                var c = function () {
+                    var t = n.createElement("script");
+                    t.type = "text/javascript", t.async = !0, t.src = "https://widget.intercom.io/widget/htawnd0o";
+                    var e = n.getElementsByTagName("script")[0];
+                    e.parentNode.insertBefore(t, e)
+                };
+                "complete" === document.readyState ? c() : t.attachEvent ? t.attachEvent("onload", c) : t
+                    .addEventListener("load", c, !1)
+            }
+        }()
+    </script><!-- Cloudflare Pages Analytics -->
+    <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon="{&quot;token&quot;: &quot;efefd9e941aa4f229b65d7d6194034fe&quot;}"></script>
+    <!-- Cloudflare Pages Analytics -->
+    <script type="text/javascript">
+        (function () {
+            window['__CF$cv$params'] = {
+                r: '6e880cb93e8f6b99',
+                m: 'V4zRfs1_u6k9EZlO4.s8I_K6noKi5OgxT5FC7Z.nwdM-1646705586-0-Aeiy0Y1f1/ZLYSh95UzkY47kkBTdK2AFQJoSew0klbN31QCB2QBLIGQ3PLNi/jH2F93zOcUMw/ghfZ+XuVq1OFAU9WpI5cwU2tw9aNJi6LTwYg9GIcLyUYp11QE11dejm+5z//9hVGZTU/c5uVXpPOmaZddxqNEfl1dYBSMCm4pC',
+                s: [0xfa6eaa4a84, 0xa6f5b76ab8],
+            }
+        })();
+    </script><iframe data-marker-styles="1" data-marker-frame="true" width="0" height="0" tabindex="-1"
+        title="Marker.io styles"
+        style="opacity: 0 !important; width: 0px !important; height: 0px !important; background: none !important; position: absolute !important; top: -6000px !important; left: -6000px !important;"></iframe>
+    <div class="marker-app"><iframe data-v-305050df="" id="feedback-button" title="Marker.io feedback button"
+            data-marker-frame=""
+            style="border: none !important; position: fixed !important; inset: auto auto 0px 20px !important; width: 137px !important; height: 42px !important; pointer-events: all !important; touch-action: auto !important; background: none !important; display: none !important; border-top-left-radius: 8px !important; border-top-right-radius: 8px !important; box-shadow: rgba(0, 0, 0, 0.086) 0px -4px 30px -6px, rgba(0, 0, 0, 0.086) 0px -2px 10px 0px !important; z-index: 2147483647; opacity: 1; transform: translateY(3px);"></iframe>
+        <iframe data-v-2bafae2e="" id="more-options-popover" title="Marker.io more options menu" data-marker-frame=""
+            style="border: none !important; position: fixed !important; bottom: 42px !important; left: calc(113px) !important; pointer-events: all !important; touch-action: auto !important; background: none !important; display: none !important; z-index: 2147483647;"></iframe>
+        <iframe id="fullscreen-ui" title="Marker.io feedback widget" data-marker-frame=""
+            style="border: none !important; position: fixed !important; inset: 0px !important; width: 100% !important; height: 100% !important; pointer-events: none !important; touch-action: none !important; background: none !important; display: none !important; z-index: 2147483647;"></iframe>
+        <iframe id="tooltip-container-wrapper" title="Marker.io tooltip UI" data-marker-frame=""
+            style="border: none !important; position: fixed !important; top: 0px !important; right: 0px !important; width: 100% !important; height: 100% !important; pointer-events: none !important; touch-action: none !important; background: none !important; display: block !important; z-index: -1000 !important;"></iframe>
+        <div data-v-9e1d350c=""><iframe data-v-9e1d350c="" id="notifications-root"
+                title="Marker.io notification overlay" data-marker-frame=""
+                style="border: none !important; position: fixed !important; top: 0px !important; right: 0px !important; width: 800px !important; height: 800px !important; pointer-events: none !important; touch-action: none !important; background: none !important; display: block !important; z-index: -1000 !important;"></iframe>
+        </div>
+        <!---->
+        <!---->
+    </div><iframe id="intercom-frame"
+        style="position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important; pointer-events: none;"
+        aria-hidden="true" tabindex="-1" title="Intercom"></iframe>
+    <div class="intercom-lightweight-app">
+        <style id="intercom-lightweight-app-style" type="text/css">
+            @keyframes intercom-lightweight-app-launcher {
+                from {
+                    opacity: 0;
+                    transform: scale(0.5);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            @keyframes intercom-lightweight-app-gradient {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes intercom-lightweight-app-messenger {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .intercom-lightweight-app {
+                position: fixed;
+                z-index: 2147483001;
+                width: 0;
+                height: 0;
+                font-family: intercom-font, "Helvetica Neue", "Apple Color Emoji", Helvetica, Arial, sans-serif;
+            }
+
+            .intercom-lightweight-app-gradient {
+                position: fixed;
+                z-index: 2147483002;
+                width: 500px;
+                height: 500px;
+                bottom: 0;
+                right: 0;
+                pointer-events: none;
+                background: radial-gradient(ellipse at bottom right,
+                        rgba(29, 39, 54, 0.16) 0%,
+                        rgba(29, 39, 54, 0) 72%);
+                animation: intercom-lightweight-app-gradient 200ms ease-out;
+            }
+
+            .intercom-lightweight-app-launcher {
+                position: fixed;
+                z-index: 2147483003;
+                bottom: 20px;
+                right: 20px;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background: #9a17cf;
+                cursor: pointer;
+                box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16);
+                animation: intercom-lightweight-app-launcher 250ms ease;
+            }
+
+            .intercom-lightweight-app-launcher:focus {
+                outline: none;
+
+            }
+
+            .intercom-lightweight-app-launcher-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 60px;
+                height: 60px;
+                transition: transform 100ms linear, opacity 80ms linear;
+            }
+
+            .intercom-lightweight-app-launcher-icon-open {
+
+                opacity: 1;
+                transform: rotate(0deg) scale(1);
+
+            }
+
+            .intercom-lightweight-app-launcher-icon-open svg {
+                width: 28px;
+                height: 32px;
+            }
+
+            .intercom-lightweight-app-launcher-icon-open svg path {
+                fill: rgb(255, 255, 255);
+            }
+
+            .intercom-lightweight-app-launcher-icon-self-serve {
+
+                opacity: 1;
+                transform: rotate(0deg) scale(1);
+
+            }
+
+            .intercom-lightweight-app-launcher-icon-self-serve svg {
+                height: 56px;
+            }
+
+            .intercom-lightweight-app-launcher-icon-self-serve svg path {
+                fill: rgb(255, 255, 255);
+            }
+
+            .intercom-lightweight-app-launcher-custom-icon-open {
+                max-height: 36px;
+                max-width: 36px;
+
+                opacity: 1;
+                transform: rotate(0deg) scale(1);
+
+            }
+
+            .intercom-lightweight-app-launcher-icon-minimize {
+
+                opacity: 0;
+                transform: rotate(-60deg) scale(0);
+
+            }
+
+            .intercom-lightweight-app-launcher-icon-minimize svg {
+                width: 16px;
+            }
+
+            .intercom-lightweight-app-launcher-icon-minimize svg path {
+                fill: rgb(255, 255, 255);
+            }
+
+            .intercom-lightweight-app-messenger {
+                position: fixed;
+                z-index: 2147483003;
+                overflow: hidden;
+                background-color: white;
+                animation: intercom-lightweight-app-messenger 250ms ease-out;
+
+                width: 376px;
+                height: calc(100% - 40px);
+                max-height: 704px;
+                min-height: 250px;
+                right: 20px;
+                bottom: 20px;
+                box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16);
+                border-radius: 8px;
+
+            }
+
+            .intercom-lightweight-app-messenger-header {
+                height: 75px;
+                background: linear-gradient(135deg,
+                        rgb(18, 22, 26) 0%,
+                        rgb(0, 0, 0) 100%);
+            }
+
+            @media print {
+                .intercom-lightweight-app {
+                    display: none;
+                }
+            }
+        </style>
+    </div>
+</body>
+
+</html>
