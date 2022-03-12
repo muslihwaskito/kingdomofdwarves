@@ -721,6 +721,10 @@
             mintIsLive: !1,
             socialLinks: [
               {
+                href: "https://youtube.com/channel/UCwFfmosdTrXv9JB0b-pdiqw",
+                icon: "mdi:youtube",
+              },
+              {
                 href: "https://twitter.com/kofdwarves",
                 icon: "mdi:twitter",
               },
@@ -859,6 +863,10 @@
         data: function () {
           return {
             headerLinks: [
+              {
+                href: "https://youtube.com/channel/UCwFfmosdTrXv9JB0b-pdiqw",
+                icon: "mdi:youtube",
+              },
               {
                 href: "https://twitter.com/kofdwarves",
                 icon: "mdi:twitter",
@@ -1048,498 +1056,7 @@
                       "v-tabs",
                       { attrs: { dark: "", centered: "" } },
                       [
-                        n("v-tab", [t._v(" Whitelist Tokens ")]),
                         n("v-tab", [t._v(" Our Pillars ")]),
-                        n(
-                          "v-tab-item",
-                          {
-                            staticStyle: {
-                              "background-color": "#1E1E1E !important",
-                            },
-                            attrs: { dark: "" },
-                          },
-                          [
-                            n(
-                              "v-card",
-                              { attrs: { flat: "", dark: "" } },
-                              [
-                                n(
-                                  "v-card-text",
-                                  [
-                                    n(
-                                      "v-row",
-                                      { staticStyle: { margin: "auto" } },
-                                      [
-                                        n(
-                                          "v-col",
-                                          {
-                                            staticStyle: { margin: "auto" },
-                                            attrs: {
-                                              id: "whitelist-tokens",
-                                              "data-aos": "fade-in",
-                                              "data-aos-duration": "1000",
-                                              cols: "12",
-                                              md: "10",
-                                            },
-                                          },
-                                          [
-                                            n(
-                                              "div",
-                                              { staticClass: "text-div" },
-                                              [
-                                                n("v-img", {
-                                                  attrs: {
-                                                    eager: "",
-                                                    contain: "",
-                                                    "max-height": "300",
-                                                    src: a("ee0e"),
-                                                  },
-                                                }),
-                                                n(
-                                                  "h3",
-                                                  { staticClass: "mb-3" },
-                                                  [
-                                                    t._v(
-                                                      " The KoD Whitelist Token is a Solana-based NFT. This token allows the holder to mint a day early for EACH drop! These can be traded on major marketplaces: "
-                                                    ),
-                                                  ]
-                                                ),
-                                                n(
-                                                  "v-row",
-                                                  [
-                                                    n(
-                                                      "v-col",
-                                                      {
-                                                        attrs: {
-                                                          cols: "12",
-                                                          sm: "12",
-                                                        },
-                                                      },
-                                                      [
-                                                        n(
-                                                          "v-row",
-                                                          [
-                                                            n(
-                                                              "v-col",
-                                                              {
-                                                                attrs: {
-                                                                  cols: "6",
-                                                                  sm: "6",
-                                                                  md: "3",
-                                                                },
-                                                              },
-                                                              [
-                                                                n(
-                                                                  "li",
-                                                                  {
-                                                                    staticClass:
-                                                                      "list-item",
-                                                                    staticStyle:
-                                                                      {
-                                                                        display:
-                                                                          "flex",
-                                                                        "justify-content":
-                                                                          "center",
-                                                                      },
-                                                                  },
-                                                                  [
-                                                                    n("v-img", {
-                                                                      staticClass:
-                                                                        "mktplace-icon",
-                                                                      staticStyle:
-                                                                        {
-                                                                          "max-width":
-                                                                            "35px",
-                                                                        },
-                                                                      attrs: {
-                                                                        eager:
-                                                                          "",
-                                                                        contain:
-                                                                          "",
-                                                                        src: a(
-                                                                          "686e"
-                                                                        ),
-                                                                      },
-                                                                    }),
-                                                                    n(
-                                                                      "h5",
-                                                                      {
-                                                                        staticClass:
-                                                                          "my-auto ml-1",
-                                                                      },
-                                                                      [
-                                                                        t._v(
-                                                                          " MAGIC EDEN "
-                                                                        ),
-                                                                      ]
-                                                                    ),
-                                                                  ],
-                                                                  1
-                                                                ),
-                                                                n(
-                                                                  "v-btn",
-                                                                  {
-                                                                    staticClass:
-                                                                      "mt-2 social-btn",
-                                                                    attrs: {
-                                                                      "x-small":
-                                                                        "",
-                                                                      primary:
-                                                                        "",
-                                                                      href: "https://magiceden.io/marketplace/kingdom_of_dwarves_whitelist",
-                                                                      target:
-                                                                        "_blank",
-                                                                    },
-                                                                  },
-                                                                  [
-                                                                    t._v(
-                                                                      " View Here "
-                                                                    ),
-                                                                  ]
-                                                                ),
-                                                              ],
-                                                              1
-                                                            ),
-                                                            n(
-                                                              "v-col",
-                                                              {
-                                                                attrs: {
-                                                                  cols: "6",
-                                                                  sm: "6",
-                                                                  md: "3",
-                                                                },
-                                                              },
-                                                              [
-                                                                n(
-                                                                  "li",
-                                                                  {
-                                                                    staticClass:
-                                                                      "list-item",
-                                                                    staticStyle:
-                                                                      {
-                                                                        display:
-                                                                          "flex",
-                                                                        "justify-content":
-                                                                          "center",
-                                                                      },
-                                                                  },
-                                                                  [
-                                                                    n("v-img", {
-                                                                      staticClass:
-                                                                        "mktplace-icon",
-                                                                      staticStyle:
-                                                                        {
-                                                                          "max-width":
-                                                                            "35px",
-                                                                        },
-                                                                      attrs: {
-                                                                        eager:
-                                                                          "",
-                                                                        contain:
-                                                                          "",
-                                                                        src: a(
-                                                                          "dccf"
-                                                                        ),
-                                                                      },
-                                                                    }),
-                                                                    n(
-                                                                      "h5",
-                                                                      {
-                                                                        staticClass:
-                                                                          "my-auto",
-                                                                      },
-                                                                      [
-                                                                        t._v(
-                                                                          " FTX "
-                                                                        ),
-                                                                      ]
-                                                                    ),
-                                                                  ],
-                                                                  1
-                                                                ),
-                                                                n(
-                                                                  "v-btn",
-                                                                  {
-                                                                    staticClass:
-                                                                      "mt-2 social-btn",
-                                                                    attrs: {
-                                                                      "x-small":
-                                                                        "",
-                                                                      primary:
-                                                                        "",
-                                                                      href: "https://ftx.us/nfts/collection/Kingdom%20of%20Dwarves%3A%20Whitelist%20Tokens/25/1",
-                                                                      target:
-                                                                        "_blank",
-                                                                    },
-                                                                  },
-                                                                  [
-                                                                    t._v(
-                                                                      " View Here "
-                                                                    ),
-                                                                  ]
-                                                                ),
-                                                              ],
-                                                              1
-                                                            ),
-                                                            n(
-                                                              "v-col",
-                                                              {
-                                                                attrs: {
-                                                                  cols: "6",
-                                                                  sm: "6",
-                                                                  md: "3",
-                                                                },
-                                                              },
-                                                              [
-                                                                n(
-                                                                  "li",
-                                                                  {
-                                                                    staticClass:
-                                                                      "list-item",
-                                                                    staticStyle:
-                                                                      {
-                                                                        display:
-                                                                          "flex",
-                                                                        "justify-content":
-                                                                          "center",
-                                                                      },
-                                                                  },
-                                                                  [
-                                                                    n("v-img", {
-                                                                      staticClass:
-                                                                        "mktplace-icon",
-                                                                      staticStyle:
-                                                                        {
-                                                                          "max-width":
-                                                                            "38px",
-                                                                        },
-                                                                      attrs: {
-                                                                        eager:
-                                                                          "",
-                                                                        contain:
-                                                                          "",
-                                                                        src: a(
-                                                                          "af4a"
-                                                                        ),
-                                                                      },
-                                                                    }),
-                                                                    n(
-                                                                      "h5",
-                                                                      {
-                                                                        staticClass:
-                                                                          "my-auto ml-1",
-                                                                      },
-                                                                      [
-                                                                        t._v(
-                                                                          " DIGITAL EYES "
-                                                                        ),
-                                                                      ]
-                                                                    ),
-                                                                  ],
-                                                                  1
-                                                                ),
-                                                                n(
-                                                                  "v-btn",
-                                                                  {
-                                                                    staticClass:
-                                                                      "mt-2 social-btn",
-                                                                    attrs: {
-                                                                      "x-small":
-                                                                        "",
-                                                                      primary:
-                                                                        "",
-                                                                      href: "https://digitaleyes.market/collections/Kingdom%20of%20Dwarves",
-                                                                      target:
-                                                                        "_blank",
-                                                                    },
-                                                                  },
-                                                                  [
-                                                                    t._v(
-                                                                      " View Here "
-                                                                    ),
-                                                                  ]
-                                                                ),
-                                                              ],
-                                                              1
-                                                            ),
-                                                            n(
-                                                              "v-col",
-                                                              {
-                                                                attrs: {
-                                                                  cols: "6",
-                                                                  sm: "6",
-                                                                  md: "3",
-                                                                },
-                                                              },
-                                                              [
-                                                                n(
-                                                                  "li",
-                                                                  {
-                                                                    staticClass:
-                                                                      "list-item",
-                                                                    staticStyle:
-                                                                      {
-                                                                        display:
-                                                                          "flex",
-                                                                        "justify-content":
-                                                                          "center",
-                                                                      },
-                                                                  },
-                                                                  [
-                                                                    n("v-img", {
-                                                                      staticClass:
-                                                                        "mktplace-icon",
-                                                                      staticStyle:
-                                                                        {
-                                                                          "max-width":
-                                                                            "35px",
-                                                                        },
-                                                                      attrs: {
-                                                                        eager:
-                                                                          "",
-                                                                        contain:
-                                                                          "",
-                                                                        src: a(
-                                                                          "7848"
-                                                                        ),
-                                                                      },
-                                                                    }),
-                                                                    n(
-                                                                      "h5",
-                                                                      {
-                                                                        staticClass:
-                                                                          "my-auto ml-2",
-                                                                      },
-                                                                      [
-                                                                        t._v(
-                                                                          " SOLSEA "
-                                                                        ),
-                                                                      ]
-                                                                    ),
-                                                                  ],
-                                                                  1
-                                                                ),
-                                                                n(
-                                                                  "v-btn",
-                                                                  {
-                                                                    staticClass:
-                                                                      "mt-2 social-btn",
-                                                                    attrs: {
-                                                                      "x-small":
-                                                                        "",
-                                                                      primary:
-                                                                        "",
-                                                                      href: "https://solsea.io/collection/61954ce2069dfdc5a944079a",
-                                                                      target:
-                                                                        "_blank",
-                                                                    },
-                                                                  },
-                                                                  [
-                                                                    t._v(
-                                                                      " View Here "
-                                                                    ),
-                                                                  ]
-                                                                ),
-                                                              ],
-                                                              1
-                                                            ),
-                                                          ],
-                                                          1
-                                                        ),
-                                                      ],
-                                                      1
-                                                    ),
-                                                  ],
-                                                  1
-                                                ),
-                                              ],
-                                              1
-                                            ),
-                                          ]
-                                        ),
-                                        n(
-                                          "v-col",
-                                          {
-                                            staticStyle: {
-                                              margin: "auto",
-                                              "padding-top": "0",
-                                            },
-                                            attrs: {
-                                              "data-aos": "fade-in",
-                                              "data-aos-duration": "1000",
-                                              cols: "12",
-                                              md: "10",
-                                            },
-                                          },
-                                          [
-                                            n(
-                                              "div",
-                                              { staticClass: "text-div" },
-                                              [
-                                                n(
-                                                  "v-row",
-                                                  { staticClass: "mb-5" },
-                                                  [
-                                                    n(
-                                                      "v-col",
-                                                      {
-                                                        attrs: {
-                                                          cols: "12",
-                                                          sm: "12",
-                                                        },
-                                                      },
-                                                      [
-                                                        n(
-                                                          "h3",
-                                                          {
-                                                            staticClass: "mb-2",
-                                                          },
-                                                          [
-                                                            t._v(
-                                                              "Join our community for a chance to snag one!"
-                                                            ),
-                                                          ]
-                                                        ),
-                                                        n(
-                                                          "v-btn",
-                                                          {
-                                                            staticClass:
-                                                              "mx-1 mt-1 social-btn",
-                                                            attrs: {
-                                                              large: "",
-                                                              href: "https://t.me/KingdomOf_Dwarves",
-                                                              target: "_blank",
-                                                            },
-                                                          },
-                                                          [
-                                                            t._v(
-                                                              " Join Our Telegram "
-                                                            ),
-                                                          ]
-                                                        ),
-                                                      ],
-                                                      1
-                                                    ),
-                                                  ],
-                                                  1
-                                                ),
-                                              ],
-                                              1
-                                            ),
-                                          ]
-                                        ),
-                                      ],
-                                      1
-                                    ),
-                                  ],
-                                  1
-                                ),
-                              ],
-                              1
-                            ),
-                          ],
-                          1
-                        ),
                         n(
                           "v-tab-item",
                           {
@@ -1799,18 +1316,6 @@
                             "We're building a whole world in our own Metaverse Worlds package! Our vast 3D empire has special buildings and terrain, all designed with impeccable detail. Engage with the community in events such as metaverse PVP battles and massive worldwide hunts."
                           ),
                         ]),
-                        a(
-                          "v-btn",
-                          {
-                            staticClass: "social-btn mt-4",
-                            attrs: {
-                              large: "",
-                              href: "/nft-worlds-guide.pdf",
-                              target: "_blank",
-                            },
-                          },
-                          [t._v(" HOW TO JOIN OUR SERVER ")]
-                        ),
                       ],
                       1
                     ),
@@ -1948,59 +1453,14 @@
                       "div",
                       { staticClass: "text-div" },
                       [
-                        n("h3", { staticClass: "mb-2" }, [
-                          t._v(
-                            " Our NFTs are intertwined with the lore like never before AND we're in the process of creating an entire novel about the Kingdom. Check out some of the rich lore on our website! "
-                          ),
-                        ]),
                         n("h4", [
-                          t._v("A big thanks to our creative mastermind: "),
                           n("span", { staticClass: "text-gold" }, [
-                            t._v("DM SOMNIAX"),
+                            t._v("KINGDOM of DWARVES"),
                           ]),
                         ]),
-                        n(
-                          "v-btn",
-                          {
-                            staticClass: "social-btn mt-4",
-                            attrs: {
-                              large: "",
-                              href: "https://medium.com/@kingdomofdwarves",
-                              target: "_blank",
-                            },
-                          },
-                          [t._v(" READ THE LORE ")]
-                        ),
-                      ],
-                      1
-                    ),
-                    n(
-                      "div",
-                      {
-                        staticClass: "text-div mt-6",
-                      },
-                      [
-                        n(
-                          "h3",
-                          {
-                            staticClass: "mb-2",
-                          },
-                          [
-                            t._v(
-                              " If reading isn't so much your thing, then sit back and relax while listening to one of our exclusive podcast espisodes. Get to know the team while diving deeper into the Kingdom! We bring on some of the coolest industry talent to talk shop and answer all your questions. "
-                            ),
-                          ]
-                        ),
-                        n("h4", [
+                        n("h3", { staticClass: "mb-2" }, [
                           t._v(
-                            "A bow of thanks to our fellow king and podcast master: "
-                          ),
-                          n(
-                            "span",
-                            {
-                              staticClass: "text-gold",
-                            },
-                            [t._v("CHRIS COCHRAN")]
+                            "Kingdom of Dwarves is Every dwarves is a unique and unique warrior created by an Emmy and Academy Award winning artist with a portfolio of works including Game of Thrones, Westworld, and Gears of War."
                           ),
                         ]),
                         n(
@@ -2075,41 +1535,6 @@
                             " Kingdom of Dwarves is a quirky, quirky warrior created by an Emmy and Academy Award-winning artist with a portfolio of work including Game of Thrones, Westworld, and Gears of War. "
                           ),
                         ]),
-                        n(
-                          "ul",
-                          {
-                            staticClass: "text-gold",
-                            staticStyle: {
-                              "list-style-type": "none",
-                              "padding-left": "0",
-                              "margin-top": "1rem",
-                            },
-                          },
-                          [
-                            n("li", [
-                              t._v("Season 1 - Thirteen Kings - "),
-                              n(
-                                "span",
-                                { staticStyle: { color: "lightcoral" } },
-                                [t._v("SOLD OUT")]
-                              ),
-                            ]),
-                            n("li", [
-                              t._v("Season 2 - The Accursed - "),
-                              n(
-                                "span",
-                                { staticStyle: { color: "lightcoral" } },
-                                [t._v("SOLD OUT")]
-                              ),
-                            ]),
-                            n("li", [
-                              t._v("Season 3 - TBA - "),
-                              n("span", { staticStyle: { color: "white" } }, [
-                                t._v("Whitelist Mint 3/9 | Public Mint 3/10"),
-                              ]),
-                            ]),
-                          ]
-                        ),
                       ],
                       1
                     ),
@@ -2119,7 +1544,7 @@
                       [
                         n(
                           "v-row",
-                          { staticStyle: { "text-align": "center" } },
+                          { staticStyle: { "text-align": "center" , "margin-top": "5px"} },
                           [
                             n(
                               "v-col",
@@ -2127,16 +1552,6 @@
                               [
                                 !t.mintIsLive && t.mintApproaching
                                   ? [
-                                      n("h4", [t._v(" Minting Starts In: ")]),
-                                      n("app-countdown", {
-                                        staticStyle: { "font-size": "34px" },
-                                        attrs: {
-                                          deadline: t.premintDateString,
-                                        },
-                                        on: {
-                                          timeElapsed: t.timeElapsedHandler,
-                                        },
-                                      }),
                                       n(
                                         "v-row",
                                         [
@@ -2152,7 +1567,7 @@
                                             },
                                             [
                                               n("h3", [
-                                                t._v("Join the Whitelist"),
+                                                t._v("Join the $KOD"),
                                               ]),
                                               n(
                                                 "v-btn",
@@ -2669,7 +2084,7 @@
                       icon: "mdi-currency-usd",
                       title: "Q3 2022",
                       lines: [
-                        "Listing Exchange ",
+                        "Listing Gate.io and Houbi Global ",
                         "Announce that dwarves holders from Season 1 will earn $KOD at a higher yield rate than subsequent seasons.",
                         "Provide Arts Scholarships to NFT Kingdom Of Dwarves holders and community members.",
                         "Gather creative work from artists in the community and invite them to help build the world of KoD together.",
@@ -2686,7 +2101,6 @@
                       icon: "mdi-palette",
                       title: "Q4 2022",
                       lines: [
-                        "Listing Exchange",
                         "Short animated debut with multiple characters in a built-in 3D environment.",
                         "Goal: $KOD holders interact on Metaverse",
                         "Goal: TV show in production",
