@@ -1507,13 +1507,13 @@
                                                               "mx-1 mt-1 social-btn",
                                                             attrs: {
                                                               large: "",
-                                                              href: "https://discord.gg/kingdomofdwarves",
+                                                              href: "https://t.me/KingdomOf_Dwarves",
                                                               target: "_blank",
                                                             },
                                                           },
                                                           [
                                                             t._v(
-                                                              " Join Our Discord "
+                                                              " Join Our Telegram "
                                                             ),
                                                           ]
                                                         ),
@@ -1848,7 +1848,7 @@
         components: { "app-title": ut },
         data: function () {
           return {
-            videoId: "Bxu9fYW6gjI",
+            videoId: "isn5ymLm9ro",
             windowWidth: window.innerWidth,
             txt: "",
           };
@@ -1965,7 +1965,51 @@
                             staticClass: "social-btn mt-4",
                             attrs: {
                               large: "",
-                              href: "https://app.kingdomofdwarves.io/lore",
+                              href: "https://medium.com/@kingdomofdwarves",
+                              target: "_blank",
+                            },
+                          },
+                          [t._v(" READ THE LORE ")]
+                        ),
+                      ],
+                      1
+                    ),
+                    n(
+                      "div",
+                      {
+                        staticClass: "text-div mt-6",
+                      },
+                      [
+                        n(
+                          "h3",
+                          {
+                            staticClass: "mb-2",
+                          },
+                          [
+                            t._v(
+                              " If reading isn't so much your thing, then sit back and relax while listening to one of our exclusive podcast espisodes. Get to know the team while diving deeper into the Kingdom! We bring on some of the coolest industry talent to talk shop and answer all your questions. "
+                            ),
+                          ]
+                        ),
+                        n("h4", [
+                          t._v(
+                            "A bow of thanks to our fellow king and podcast master: "
+                          ),
+                          n(
+                            "span",
+                            {
+                              staticClass: "text-gold",
+                            },
+                            [t._v("CHRIS COCHRAN")]
+                          ),
+                        ]),
+                        n(
+                          "v-btn",
+                          {
+                            staticClass: "social-btn mt-4",
+                            attrs: {
+                              large: "",
+                              href: "https://medium.com/@kingdomofdwarves",
                               target: "_blank",
                             },
                           },
@@ -2591,121 +2635,184 @@
         data: function () {
           return {
             timeline: [
-              {
-                title: "Q1 2022",
-                subtitle: "",
-                objectives: [
-                  {
-                    icon: "mdi-draw",
-                    title: "Private-sale ",
-                    lines: [
-                      "Debut animated shorts and continue animation pursuits",
-                      "Animate actions for metaverse use",
-                    ],
-                  },
-                  {
-                    icon: "mdi-menu",
-                    title: "Pre-Sale",
-                    lines: [
-                      "Reveal Season 2 and 3 specific Lore",
-                      "Continue developing the Armory and website for more dwarf owner interactivity",
-                    ],
-                  },
-                  {
-                    icon: "mdi-currency-usd",
-                    title: "KINGDOM CURRENCY",
-                    lines: [
-                      "Funding raised to establish liquidity for CRWN. Begin the development of the CRWN systems.",
-                    ],
-                  },
-                  {
-                    icon: "mdi-palette",
-                    title: "TOP QUALITY ART",
-                    lines: [
-                      "Award a second Art Scholarship to an NFT holder and community member.",
-                      "Merchandise available for purchase",
-                    ],
-                  },
-                ],
-              },
-              {
-                title: "Q2 2022",
-                subtitle: "Season 4, 5, & 6 Drops",
-                objectives: [
-                  {
-                    icon: "mdi-draw",
-                    title: "METAVERSE & ANIMATION",
-                    lines: [
-                      "The 3D environment for animated shorts is developed",
-                      "Additional characters rigged for animation",
-                      "Pitches to TV networks will be pursued",
-                    ],
-                  },
-                  {
-                    icon: "mdi-menu",
-                    title: "LORE & GAMIFICATION",
-                    lines: [
-                      "Reveal the new characters and lore for Seasons 4, 5, and 6",
-                      "Development of a table-top board game",
-                    ],
-                  },
-                  {
-                    icon: "mdi-currency-usd",
-                    title: "KINGDOM CURRENCY",
-                    lines: [
-                      "$CRWN is funded and available for staking and utility",
-                      "The Kingdom DAO is established where holders will have the opportunity to vote on key decisions",
-                    ],
-                  },
-                  {
-                    icon: "mdi-palette",
-                    title: "TOP QUALITY ART",
-                    lines: [
-                      "Award a third Art Scholarship to an NFT holder and community member",
-                    ],
-                  },
-                ],
-              },
-              {
-                title: "Q3 2022",
-                subtitle: "Season 7 & 8 Drops",
-                objectives: [
-                  {
-                    icon: "mdi-draw",
-                    title: "METAVERSE & ANIMATION",
-                    lines: [
-                      "Debut of animated shorts with multiple characters in a built-out 3D environment.",
-                      "Goal: Dwarf holders interact in the Metaverse",
-                      "Goal: TV show in production",
-                    ],
-                  },
-                  {
-                    icon: "mdi-menu",
-                    title: "LORE & GAMIFICATION",
-                    lines: [
-                      "Kingdom Lore encompasses all characters from all 8 Seasons",
-                    ],
-                  },
-                  {
-                    icon: "mdi-currency-usd",
-                    title: "KINGDOM CURRENCY",
-                    lines: [
-                      "NFT holders earn passive income by staking their dwarves, use $CRWN to buy items in the Armory, and participate in exclusive battles  ",
-                      "The KoD community is driving decision-making in the Kingdom DAO",
-                    ],
-                  },
-                  {
-                    icon: "mdi-palette",
-                    title: "TOP QUALITY ART",
-                    lines: [
-                      "Award a fourth Art Scholarship to an NFT holder and community member  ",
-                      "Miniature 3D models of NFTs will be available",
-                      "Announcement of the next NFT for Kingdom of Dwarves",
-                    ],
-                  },
-                ],
-              },
-            ],
+                {
+                  title: "Road Map Kingdom of Dwarves",
+                  subtitle: "",
+                  objectives: [
+                    {
+                      icon: "mdi-draw",
+                      title: "Q12022",
+                      lines: [
+                        "Private-sale ",
+                        "Pre-Sale",
+                        "Aggresive Marketing",
+                        "Airdrop",
+                        "PancakeSwap Listing",
+                        "CMC & Coingecko",
+
+                      ],
+                    },
+                    {
+                      icon: "mdi-menu",
+                      title: "Q2 2022",
+                      lines: [
+                        "Create meaningful partnerships with Metaverse companies",
+                        "Begin the process of animating the collection",
+                        "Release the 13 Kings and Realms",
+                        "Release a rare King's Guard Weapon, the Direforge Blade, to equip for a few lucky dwarves!",
+                        "Build out the ability for dwarf holders to interact with their dwarves on the KoD website.",
+                        "Rarity of season 1 assets are revealed on the website.",
+                        "Certik Audit ",
+                      ],
+                    },
+                    {
+                      icon: "mdi-currency-usd",
+                      title: "Q3 2022",
+                      lines: [
+                        "Listing Exchange ",
+                        "Announce that dwarves holders from Season 1 will earn $KOD at a higher yield rate than subsequent seasons.",
+                        "Provide Arts Scholarships to NFT Kingdom Of Dwarves holders and community members.",
+                        "Gather creative work from artists in the community and invite them to help build the world of KoD together.",
+                        "Short animation debut and continue animation quest",
+                        "Animated actions for metaverse use",
+                        "Reveal the special Lore Season 2 and 3",
+                        "Keep developing Armory and website for more dwarf owner interactivity",
+                        "Funding is raised to build liquidity for KOD. Start the $KOD system development.",
+                        "Award a second Arts Scholarship to $KOD holders and community members.",
+                        "Merchandise available for purchase",
+                      ],
+                    },
+                    {
+                      icon: "mdi-palette",
+                      title: "Q4 2022",
+                      lines: [
+                        "Listing Exchange",
+                        "Short animated debut with multiple characters in a built-in 3D environment.",
+                        "Goal: $KOD holders interact on Metaverse",
+                        "Goal: TV show in production",
+                        "Kingdom Lore includes all characters from all 8 Seasons",
+                        "$KOD Token holders and NFT KOD tokens earn passive income by staking their dwarves, and Hold $KOD tokens.",
+                        "first purchase NFT using binance and later to buy items in the Armory, and participate in exclusive battles",
+                        "The KOD community drives decision making in Kingdom Of Dwarves",
+                      ],
+                    },
+                  ],
+                },
+                // {
+                //   title: "Q1 2022",
+                //   subtitle: "Season 2 & 3 Drops",
+                //   objectives: [
+                //     {
+                //       icon: "mdi-draw",
+                //       title: "METAVERSE & ANIMATION",
+                //       lines: [
+                //         "Debut animated shorts and continue animation pursuits",
+                //         "Animate actions for metaverse use",
+                //       ],
+                //     },
+                //     {
+                //       icon: "mdi-menu",
+                //       title: "LORE & GAMIFICATION",
+                //       lines: [
+                //         "Reveal Season 2 and 3 specific Lore",
+                //         "Continue developing the Armory and website for more dwarf owner interactivity",
+                //       ],
+                //     },
+                //     {
+                //       icon: "mdi-currency-usd",
+                //       title: "KINGDOM CURRENCY",
+                //       lines: [
+                //         "Funding raised to establish liquidity for CRWN. Begin the development of the CRWN systems.",
+                //       ],
+                //     },
+                //     {
+                //       icon: "mdi-palette",
+                //       title: "TOP QUALITY ART",
+                //       lines: [
+                //         "Award a second Art Scholarship to an NFT holder and community member.",
+                //         "Merchandise available for purchase",
+                //       ],
+                //     },
+                //   ],
+                // },
+                // {
+                //   title: "Q2 2022",
+                //   subtitle: "Season 4, 5, & 6 Drops",
+                //   objectives: [
+                //     {
+                //       icon: "mdi-draw",
+                //       title: "METAVERSE & ANIMATION",
+                //       lines: [
+                //         "The 3D environment for animated shorts is developed",
+                //         "Additional characters rigged for animation",
+                //         "Pitches to TV networks will be pursued",
+                //       ],
+                //     },
+                //     {
+                //       icon: "mdi-menu",
+                //       title: "LORE & GAMIFICATION",
+                //       lines: [
+                //         "Reveal the new characters and lore for Seasons 4, 5, and 6",
+                //         "Development of a table-top board game",
+                //       ],
+                //     },
+                //     {
+                //       icon: "mdi-currency-usd",
+                //       title: "KINGDOM CURRENCY",
+                //       lines: [
+                //         "$CRWN is funded and available for staking and utility",
+                //         "The Kingdom DAO is established where holders will have the opportunity to vote on key decisions",
+                //       ],
+                //     },
+                //     {
+                //       icon: "mdi-palette",
+                //       title: "TOP QUALITY ART",
+                //       lines: [
+                //         "Award a third Art Scholarship to an NFT holder and community member",
+                //       ],
+                //     },
+                //   ],
+                // },
+                // {
+                //   title: "Q3 2022",
+                //   subtitle: "Season 7 & 8 Drops",
+                //   objectives: [
+                //     {
+                //       icon: "mdi-draw",
+                //       title: "METAVERSE & ANIMATION",
+                //       lines: [
+                //         "Debut of animated shorts with multiple characters in a built-out 3D environment.",
+                //         "Goal: Dwarf holders interact in the Metaverse",
+                //         "Goal: TV show in production",
+                //       ],
+                //     },
+                //     {
+                //       icon: "mdi-menu",
+                //       title: "LORE & GAMIFICATION",
+                //       lines: [
+                //         "Kingdom Lore encompasses all characters from all 8 Seasons",
+                //       ],
+                //     },
+                //     {
+                //       icon: "mdi-currency-usd",
+                //       title: "KINGDOM CURRENCY",
+                //       lines: [
+                //         "NFT holders earn passive income by staking their dwarves, use $CRWN to buy items in the Armory, and participate in exclusive battles  ",
+                //         "The KoD community is driving decision-making in the Kingdom DAO",
+                //       ],
+                //     },
+                //     {
+                //       icon: "mdi-palette",
+                //       title: "TOP QUALITY ART",
+                //       lines: [
+                //         "Award a fourth Art Scholarship to an NFT holder and community member  ",
+                //         "Miniature 3D models of NFTs will be available",
+                //         "Announcement of the next NFT for Kingdom of Dwarves",
+                //       ],
+                //     },
+                //   ],
+                // },
+              ],
           };
         },
       },
