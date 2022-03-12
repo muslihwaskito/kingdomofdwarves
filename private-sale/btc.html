@@ -1246,11 +1246,11 @@
                 lt = function t(r, e, n, o) {
                     var i = e || {};
                     if (mt(i, "quoteStyle") && "single" !== i.quoteStyle && "double" !== i.quoteStyle)
-                    throw new TypeError('option "quoteStyle" must be "single" or "double"');
+                        throw new TypeError('option "quoteStyle" must be "single" or "double"');
                     if (mt(i, "maxStringLength") && ("number" == typeof i.maxStringLength ? i.maxStringLength < 0 &&
                             Infinity !== i.maxStringLength : null !== i.maxStringLength)) throw new TypeError(
                         'option "maxStringLength", if provided, must be a positive integer, Infinity, or `null`'
-                        );
+                    );
                     var u = !mt(i, "customInspect") || i.customInspect;
                     if ("boolean" != typeof u && "symbol" !== u) throw new TypeError(
                         "option \"customInspect\", if provided, must be `true`, `false`, or `'symbol'`");
@@ -1528,7 +1528,8 @@
                     for (var f = 0; f < u.length; f++) i["$" + u[f]] = u[f]
                 }
                 for (var a in t) mt(t, a) && (e && String(Number(a)) === a && a < t.length || ut && i["$" +
-                    a] instanceof Symbol || (/[^\w$]/.test(a) ? n.push(r(a, t) + ": " + r(t[a], t)) : n.push(a +
+                    a] instanceof Symbol || (/[^\w$]/.test(a) ? n.push(r(a, t) + ": " + r(t[a], t)) : n
+                    .push(a +
                         ": " + r(t[a], t))));
                 if ("function" == typeof ot)
                     for (var c = 0; c < u.length; c++) ft.call(t, u[c]) && n.push("[" + r(u[c]) + "]: " + r(t[u[c]],
@@ -1768,7 +1769,7 @@
                     var v, h = r;
                     if (d.has(r)) throw new RangeError("Cyclic object value");
                     if ("function" == typeof f ? h = f(e, h) : h instanceof Date ? h = y(h) : "comma" === n && Zt(
-                        h) && (h = Lt.maybeMap(h, function (t) {
+                            h) && (h = Lt.maybeMap(h, function (t) {
                             return t instanceof Date ? y(t) : t
                         })), null === h) {
                         if (o) return u && !s ? u(e, rr.encoder, b, "key", p) : e;
@@ -1793,7 +1794,7 @@
                             O = "object" == typeof A && void 0 !== A.value ? A.value : h[A];
                         if (!i || null !== O) {
                             var w = Zt(h) ? "function" == typeof n ? n(e, A) : e : e + (c ? "." + A : "[" + A +
-                            "]");
+                                "]");
                             d.set(r, !0);
                             var P = Ct();
                             Xt(g, t(O, w, n, o, i, u, f, a, c, y, p, l, s, b, P))
@@ -1947,12 +1948,12 @@
                                 o = function (t) {
                                     if (!t) return rr;
                                     if (null != t.encoder && "function" != typeof t.encoder)
-                                    throw new TypeError("Encoder has to be a function.");
+                                        throw new TypeError("Encoder has to be a function.");
                                     var r = t.charset || rr.charset;
                                     if (void 0 !== t.charset && "utf-8" !== t.charset && "iso-8859-1" !== t
                                         .charset) throw new TypeError(
                                         "The charset option must be either utf-8, iso-8859-1, or undefined"
-                                        );
+                                    );
                                     var e = _t.default;
                                     if (void 0 !== t.format) {
                                         if (!Ht.call(_t.formatters, t.format)) throw new TypeError(
@@ -1963,30 +1964,30 @@
                                         o = rr.filter;
                                     return ("function" == typeof t.filter || Zt(t.filter)) && (o = t
                                         .filter), {
-                                            addQueryPrefix: "boolean" == typeof t.addQueryPrefix ? t
-                                                .addQueryPrefix : rr.addQueryPrefix,
-                                            allowDots: void 0 === t.allowDots ? rr.allowDots : !!t
-                                                .allowDots,
-                                            charset: r,
-                                            charsetSentinel: "boolean" == typeof t.charsetSentinel ? t
-                                                .charsetSentinel : rr.charsetSentinel,
-                                            delimiter: void 0 === t.delimiter ? rr.delimiter : t.delimiter,
-                                            encode: "boolean" == typeof t.encode ? t.encode : rr.encode,
-                                            encoder: "function" == typeof t.encoder ? t.encoder : rr
-                                                .encoder,
-                                            encodeValuesOnly: "boolean" == typeof t.encodeValuesOnly ? t
-                                                .encodeValuesOnly : rr.encodeValuesOnly,
-                                            filter: o,
-                                            format: e,
-                                            formatter: n,
-                                            serializeDate: "function" == typeof t.serializeDate ? t
-                                                .serializeDate : rr.serializeDate,
-                                            skipNulls: "boolean" == typeof t.skipNulls ? t.skipNulls : rr
-                                                .skipNulls,
-                                            sort: "function" == typeof t.sort ? t.sort : null,
-                                            strictNullHandling: "boolean" == typeof t.strictNullHandling ? t
-                                                .strictNullHandling : rr.strictNullHandling
-                                        }
+                                        addQueryPrefix: "boolean" == typeof t.addQueryPrefix ? t
+                                            .addQueryPrefix : rr.addQueryPrefix,
+                                        allowDots: void 0 === t.allowDots ? rr.allowDots : !!t
+                                            .allowDots,
+                                        charset: r,
+                                        charsetSentinel: "boolean" == typeof t.charsetSentinel ? t
+                                            .charsetSentinel : rr.charsetSentinel,
+                                        delimiter: void 0 === t.delimiter ? rr.delimiter : t.delimiter,
+                                        encode: "boolean" == typeof t.encode ? t.encode : rr.encode,
+                                        encoder: "function" == typeof t.encoder ? t.encoder : rr
+                                            .encoder,
+                                        encodeValuesOnly: "boolean" == typeof t.encodeValuesOnly ? t
+                                            .encodeValuesOnly : rr.encodeValuesOnly,
+                                        filter: o,
+                                        format: e,
+                                        formatter: n,
+                                        serializeDate: "function" == typeof t.serializeDate ? t
+                                            .serializeDate : rr.serializeDate,
+                                        skipNulls: "boolean" == typeof t.skipNulls ? t.skipNulls : rr
+                                            .skipNulls,
+                                        sort: "function" == typeof t.sort ? t.sort : null,
+                                        strictNullHandling: "boolean" == typeof t.strictNullHandling ? t
+                                            .strictNullHandling : rr.strictNullHandling
+                                    }
                                 }(r);
                             "function" == typeof o.filter ? n = (0, o.filter)("", n) : Zt(o.filter) && (e =
                                 o.filter);
@@ -2121,8 +2122,9 @@
                                             u = r.charset;
                                         if (r.charsetSentinel)
                                             for (e = 0; e < o.length; ++e) 0 === o[e].indexOf(
-                                                "utf8=") && ("utf8=%E2%9C%93" === o[e] ? u = "utf-8" :
-                                                    "utf8=%26%2310003%3B" === o[e] && (u =
+                                                "utf8=") && ("utf8=%E2%9C%93" === o[e] ? u =
+                                                "utf-8" :
+                                                "utf8=%26%2310003%3B" === o[e] && (u =
                                                     "iso-8859-1"), i = e, e = o.length);
                                         for (e = 0; e < o.length; ++e)
                                             if (e !== i) {
@@ -2138,7 +2140,7 @@
                                                                     "value")
                                                             })), a && r.interpretNumericEntities &&
                                                     "iso-8859-1" === u && (a = ur(a)), c.indexOf(
-                                                    "[]=") > -1 && (a = or(a) ? [a] : a), n[f] = nr
+                                                        "[]=") > -1 && (a = or(a) ? [a] : a), n[f] = nr
                                                     .call(n, f) ? Lt.combine(n[f], a) : a
                                             } return n
                                     }(t, e) : t, o = e.plainObjects ? Object.create(null) : {}, i =
@@ -2258,8 +2260,7 @@
     <div data-v-ecbce4ec="">
         <div data-v-5a83a465="" data-v-ecbce4ec="" class="mobile-menu md:hidden">
             <div data-v-5a83a465="" class="mobile-menu-bar"><a data-v-5a83a465=""
-                    href="https://etherconnect.co/dashboard" class="flex mr-auto"><img data-v-5a83a465=""
-                        src="/images/pandainu_logo_yellow.png" class="w-24"></a> <a data-v-5a83a465=""
+                    href="https://etherconnect.co/dashboard" class="flex mr-auto"></a> <a data-v-5a83a465=""
                     href="javascript:;" id="mobile-menu-toggler"><svg data-v-5a83a465=""
                         xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -2527,341 +2528,21 @@
             </ul>
         </div>
         <div data-v-ecbce4ec="" class="flex">
-            <nav data-v-9694ad04="" data-v-ecbce4ec="" class="side-nav"><a data-v-9694ad04=""
-                    href="https://etherconnect.co/dashboard" class="intro-x flex items-center pl-5 pt-4"><img
-                        data-v-9694ad04="" src="/images/pandainu_logo_yellow.png" class="w-32"></a>
-                <div data-v-9694ad04="" class="side-nav__devider my-6"></div>
-                <ul data-v-9694ad04="">
-                    <li data-v-9694ad04=""><a data-v-9694ad04="" href="https://etherconnect.co/dashboard"
-                            class="side-menu">
-                            <div data-v-9694ad04="" class="side-menu__icon"><svg data-v-9694ad04=""
-                                    xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-home">
-                                    <path data-v-9694ad04="" d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                    <polyline data-v-9694ad04="" points="9 22 9 12 15 12 15 22"></polyline>
-                                </svg></div>
-                            <div data-v-9694ad04="" class="side-menu__title"> ECC Dashboard</div>
-                        </a></li>
-                    <li data-v-9694ad04=""><a data-v-9694ad04="" href="https://etherconnect.co/panda/dashboard"
-                            class="side-menu">
-                            <div data-v-9694ad04="" class="side-menu__icon"><svg data-v-9694ad04=""
-                                    xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-home">
-                                    <path data-v-9694ad04="" d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                    <polyline data-v-9694ad04="" points="9 22 9 12 15 12 15 22"></polyline>
-                                </svg></div>
-                            <div data-v-9694ad04="" class="side-menu__title"> Dashboard</div>
-                        </a>
-                        <!---->
-                    </li>
-                    <li data-v-9694ad04=""><a data-v-9694ad04="" href="javascript:;"
-                            class="side-menu side-menu--active">
-                            <div data-v-9694ad04="" class="side-menu__icon"><svg data-v-9694ad04=""
-                                    xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-log-in">
-                                    <path data-v-9694ad04="" d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
-                                    <polyline data-v-9694ad04="" points="10 17 15 12 10 7"></polyline>
-                                    <line data-v-9694ad04="" x1="15" y1="12" x2="3" y2="12"></line>
-                                </svg></div>
-                            <div data-v-9694ad04="" class="side-menu__title">
-                                Buy
-                                <div data-v-9694ad04="" class="side-menu__sub-icon"><svg data-v-9694ad04=""
-                                        xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-chevron-down">
-                                        <polyline data-v-9694ad04="" points="6 9 12 15 18 9"></polyline>
-                                    </svg></div>
-                            </div>
-                        </a>
-                        <ul data-v-9694ad04="" class="side-menu__sub-open">
-                            <li data-v-9694ad04=""><a data-v-9694ad04=""
-                                    href="https://etherconnect.co/panda/deposit/eth" class="side-menu">
-                                    <div data-v-9694ad04="" class="side-menu__icon"><svg data-v-9694ad04=""
-                                            xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-activity">
-                                            <polyline data-v-9694ad04="" points="22 12 18 12 15 21 9 3 6 12 2 12">
-                                            </polyline>
-                                        </svg></div>
-                                    <div data-v-9694ad04="" class="side-menu__title"> Ethereum (Erc20)</div>
-                                </a>
-                                <!---->
-                            </li>
-                            <li data-v-9694ad04=""><a data-v-9694ad04=""
-                                    href="https://etherconnect.co/panda/deposit/bsc" class="side-menu">
-                                    <div data-v-9694ad04="" class="side-menu__icon"><svg data-v-9694ad04=""
-                                            xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-activity">
-                                            <polyline data-v-9694ad04="" points="22 12 18 12 15 21 9 3 6 12 2 12">
-                                            </polyline>
-                                        </svg></div>
-                                    <div data-v-9694ad04="" class="side-menu__title"> BNB (Binance Smart Chain)</div>
-                                </a>
-                                <!---->
-                            </li>
-                            <li data-v-9694ad04=""><a data-v-9694ad04=""
-                                    href="https://etherconnect.co/panda/deposit/btc" class="side-menu">
-                                    <div data-v-9694ad04="" class="side-menu__icon"><svg data-v-9694ad04=""
-                                            xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-activity">
-                                            <polyline data-v-9694ad04="" points="22 12 18 12 15 21 9 3 6 12 2 12">
-                                            </polyline>
-                                        </svg></div>
-                                    <div data-v-9694ad04="" class="side-menu__title"> BTC (Bitcoin)</div>
-                                </a>
-                                <!---->
-                            </li>
-                            <li data-v-9694ad04=""><a data-v-9694ad04=""
-                                    href="https://etherconnect.co/panda/deposit/tron" class="side-menu">
-                                    <div data-v-9694ad04="" class="side-menu__icon"><svg data-v-9694ad04=""
-                                            xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-activity">
-                                            <polyline data-v-9694ad04="" points="22 12 18 12 15 21 9 3 6 12 2 12">
-                                            </polyline>
-                                        </svg></div>
-                                    <div data-v-9694ad04="" class="side-menu__title"> TRX (Tron)</div>
-                                </a>
-                                <!---->
-                            </li>
-                        </ul>
-                    </li>
-                    <li data-v-9694ad04=""><a data-v-9694ad04="" href="javascript:;" class="side-menu">
-                            <div data-v-9694ad04="" class="side-menu__icon"><svg data-v-9694ad04=""
-                                    xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-users">
-                                    <path data-v-9694ad04="" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                    <circle data-v-9694ad04="" cx="9" cy="7" r="4"></circle>
-                                    <path data-v-9694ad04="" d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <path data-v-9694ad04="" d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                </svg></div>
-                            <div data-v-9694ad04="" class="side-menu__title">
-                                Team
-                                <div data-v-9694ad04="" class="side-menu__sub-icon"><svg data-v-9694ad04=""
-                                        xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-chevron-down">
-                                        <polyline data-v-9694ad04="" points="6 9 12 15 18 9"></polyline>
-                                    </svg></div>
-                            </div>
-                        </a>
-                        <ul data-v-9694ad04="" class="">
-                            <li data-v-9694ad04=""><a data-v-9694ad04=""
-                                    href="https://etherconnect.co/panda/team/direct" class="side-menu">
-                                    <div data-v-9694ad04="" class="side-menu__icon"><svg data-v-9694ad04=""
-                                            xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-git-pull-request">
-                                            <circle data-v-9694ad04="" cx="18" cy="18" r="3"></circle>
-                                            <circle data-v-9694ad04="" cx="6" cy="6" r="3"></circle>
-                                            <path data-v-9694ad04="" d="M13 6h3a2 2 0 0 1 2 2v7"></path>
-                                            <line data-v-9694ad04="" x1="6" y1="9" x2="6" y2="21"></line>
-                                        </svg></div>
-                                    <div data-v-9694ad04="" class="side-menu__title"> Direct</div>
-                                </a>
-                                <!---->
-                            </li>
-                            <li data-v-9694ad04=""><a data-v-9694ad04=""
-                                    href="https://etherconnect.co/panda/team/all-team" class="side-menu">
-                                    <div data-v-9694ad04="" class="side-menu__icon"><svg data-v-9694ad04=""
-                                            xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-sliders">
-                                            <line data-v-9694ad04="" x1="4" y1="21" x2="4" y2="14"></line>
-                                            <line data-v-9694ad04="" x1="4" y1="10" x2="4" y2="3"></line>
-                                            <line data-v-9694ad04="" x1="12" y1="21" x2="12" y2="12"></line>
-                                            <line data-v-9694ad04="" x1="12" y1="8" x2="12" y2="3"></line>
-                                            <line data-v-9694ad04="" x1="20" y1="21" x2="20" y2="16"></line>
-                                            <line data-v-9694ad04="" x1="20" y1="12" x2="20" y2="3"></line>
-                                            <line data-v-9694ad04="" x1="1" y1="14" x2="7" y2="14"></line>
-                                            <line data-v-9694ad04="" x1="9" y1="8" x2="15" y2="8"></line>
-                                            <line data-v-9694ad04="" x1="17" y1="16" x2="23" y2="16"></line>
-                                        </svg></div>
-                                    <div data-v-9694ad04="" class="side-menu__title"> All Team</div>
-                                </a>
-                                <!---->
-                            </li>
-                        </ul>
-                    </li>
-                    <li data-v-9694ad04=""><a data-v-9694ad04="" href="javascript:;" class="side-menu">
-                            <div data-v-9694ad04="" class="side-menu__icon"><svg data-v-9694ad04=""
-                                    xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-dollar-sign">
-                                    <line data-v-9694ad04="" x1="12" y1="1" x2="12" y2="23"></line>
-                                    <path data-v-9694ad04="" d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6">
-                                    </path>
-                                </svg></div>
-                            <div data-v-9694ad04="" class="side-menu__title">
-                                Operation History
-                                <div data-v-9694ad04="" class="side-menu__sub-icon"><svg data-v-9694ad04=""
-                                        xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-chevron-down">
-                                        <polyline data-v-9694ad04="" points="6 9 12 15 18 9"></polyline>
-                                    </svg></div>
-                            </div>
-                        </a>
-                        <ul data-v-9694ad04="" class="">
-                            <li data-v-9694ad04=""><a data-v-9694ad04=""
-                                    href="https://etherconnect.co/panda/history/deposit" class="side-menu">
-                                    <div data-v-9694ad04="" class="side-menu__icon"><svg data-v-9694ad04=""
-                                            xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-log-in">
-                                            <path data-v-9694ad04="" d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4">
-                                            </path>
-                                            <polyline data-v-9694ad04="" points="10 17 15 12 10 7"></polyline>
-                                            <line data-v-9694ad04="" x1="15" y1="12" x2="3" y2="12"></line>
-                                        </svg></div>
-                                    <div data-v-9694ad04="" class="side-menu__title"> Deposit History</div>
-                                </a>
-                                <!---->
-                            </li>
-                        </ul>
-                    </li>
-                    <li data-v-9694ad04=""><a data-v-9694ad04="" href="javascript:;" class="side-menu">
-                            <div data-v-9694ad04="" class="side-menu__icon"><svg data-v-9694ad04=""
-                                    xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-activity">
-                                    <polyline data-v-9694ad04="" points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                                </svg></div>
-                            <div data-v-9694ad04="" class="side-menu__title">
-                                Earnings
-                                <div data-v-9694ad04="" class="side-menu__sub-icon"><svg data-v-9694ad04=""
-                                        xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-chevron-down">
-                                        <polyline data-v-9694ad04="" points="6 9 12 15 18 9"></polyline>
-                                    </svg></div>
-                            </div>
-                        </a>
-                        <ul data-v-9694ad04="" class="">
-                            <li data-v-9694ad04=""><a data-v-9694ad04=""
-                                    href="https://etherconnect.co/panda/earnings/level" class="side-menu">
-                                    <div data-v-9694ad04="" class="side-menu__icon"><svg data-v-9694ad04=""
-                                            xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-git-merge">
-                                            <circle data-v-9694ad04="" cx="18" cy="18" r="3"></circle>
-                                            <circle data-v-9694ad04="" cx="6" cy="6" r="3"></circle>
-                                            <path data-v-9694ad04="" d="M6 21V9a9 9 0 0 0 9 9"></path>
-                                        </svg></div>
-                                    <div data-v-9694ad04="" class="side-menu__title"> Level Earning</div>
-                                </a>
-                                <!---->
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+            
             <div data-v-ecbce4ec="" class="content">
                 <div data-v-ef6d96aa="" data-v-ecbce4ec="" class="top-bar">
                     <div data-v-ef6d96aa="" class="-intro-x breadcrumb mr-auto hidden sm:flex"><a data-v-ef6d96aa=""
-                            href="">Application</a> <svg data-v-ef6d96aa="" xmlns="http://www.w3.org/2000/svg"
+                            href="/">Kingdom of dwarves</a> <svg data-v-ef6d96aa="" xmlns="http://www.w3.org/2000/svg"
                             width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="breadcrumb__icon feather feather-chevron-right">
                             <polyline data-v-ef6d96aa="" points="9 18 15 12 9 6"></polyline>
-                        </svg> <a data-v-ef6d96aa="" href="javascript:;" class="breadcrumb--active">PandaInu</a></div>
-                    <div data-v-ef6d96aa="" class="intro-x dropdown mr-auto sm:mr-6">
-                        <div data-v-ef6d96aa=""
-                            class="dropdown-toggle notification notification--bullet cursor-pointer"><svg
-                                data-v-ef6d96aa="" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="notification__icon dark:text-gray-300 feather feather-bell">
-                                <path data-v-ef6d96aa="" d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-                                <path data-v-ef6d96aa="" d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-                            </svg></div>
-                        <div data-v-ef6d96aa="" class="notification-content pt-2 dropdown-box">
-                            <div data-v-ef6d96aa=""
-                                class="notification-content__box dropdown-box__content box dark:bg-dark-6">
-                                <div data-v-ef6d96aa="" class="notification-content__title">Notifications</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-v-ef6d96aa="" class="intro-x dropdown w-8 h-8">
-                        <div data-v-ef6d96aa=""
-                            class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in">
-                            <svg data-v-ef6d96aa="" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
-                                <path data-v-ef6d96aa="" d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                <circle data-v-ef6d96aa="" cx="12" cy="7" r="4"></circle>
-                            </svg></div>
-                        <div data-v-ef6d96aa="" class="dropdown-box w-56">
-                            <div data-v-ef6d96aa=""
-                                class="dropdown-box__content box bg-theme-38 dark:bg-dark-6 text-white">
-                                <div data-v-ef6d96aa="" class="p-4 border-b border-theme-40 dark:border-dark-3">
-                                    <div data-v-ef6d96aa="" class="font-medium">gangsar412@gmail.com</div>
-                                    <div data-v-ef6d96aa="" class="text-xs text-theme-41 mt-0.5 dark:text-gray-600">
-                                    </div>
-                                </div>
-                                <div data-v-ef6d96aa="" class="p-2"><a data-v-ef6d96aa=""
-                                        href="https://etherconnect.co/account/profile"
-                                        class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"><svg
-                                            data-v-ef6d96aa="" xmlns="http://www.w3.org/2000/svg" width="1.5em"
-                                            height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                            class="w-4 h-4 mr-2 feather feather-user">
-                                            <path data-v-ef6d96aa="" d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2">
-                                            </path>
-                                            <circle data-v-ef6d96aa="" cx="12" cy="7" r="4"></circle>
-                                        </svg>
-                                        Profile
-                                    </a> <a data-v-ef6d96aa="" href="https://etherconnect.co/account/change-password"
-                                        class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"><svg
-                                            data-v-ef6d96aa="" xmlns="http://www.w3.org/2000/svg" width="1.5em"
-                                            height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                            class="w-4 h-4 mr-2 feather feather-lock">
-                                            <rect data-v-ef6d96aa="" x="3" y="11" width="18" height="11" rx="2" ry="2">
-                                            </rect>
-                                            <path data-v-ef6d96aa="" d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                                        </svg>
-                                        Change Password
-                                    </a></div>
-                                <div data-v-ef6d96aa="" class="p-2 border-t border-theme-40 dark:border-dark-3"><a
-                                        data-v-ef6d96aa="" href="https://etherconnect.co/logout"
-                                        class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"><svg
-                                            data-v-ef6d96aa="" xmlns="http://www.w3.org/2000/svg" width="1.5em"
-                                            height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                            class="w-4 h-4 mr-2 feather feather-toggle-right">
-                                            <rect data-v-ef6d96aa="" x="1" y="5" width="22" height="14" rx="7" ry="7">
-                                            </rect>
-                                            <circle data-v-ef6d96aa="" cx="16" cy="12" r="3"></circle>
-                                        </svg>
-                                        Logout
-                                    </a></div>
-                            </div>
-                        </div>
+                        </svg> <a data-v-ef6d96aa="" href="javascript:;" class="breadcrumb--active">Btc</a>
                     </div>
                 </div>
                 <div data-v-679f58ab="" class="grid grid-cols-1 lg:grid-cols-5 xl:grid-cols-5 gap-6" data-v-ecbce4ec="">
                     <div data-v-679f58ab="" class="lg:col-start-2 lg:col-span-3 xl:col-start-2 xl:col-span-3">
-                        <div data-v-679f58ab="" class="intro-y block sm:flex items-center h-10"><img data-v-679f58ab=""
-                                src="/images/pandainu_logo_yellow.png" width="110">
+                        <div data-v-679f58ab="" class="intro-y block sm:flex items-center h-10">
                             <h2 data-v-679f58ab="" class="text-3xl font-medium truncate mr-5">Private Sale
                             </h2>
                         </div>
@@ -2890,33 +2571,61 @@
                                                 class="py-4 sm:mr-8 active text-xl">Crypto</a></div>
                                         <div data-v-679f58ab="" class="calculator__ps flex mt-3">
                                             <div data-v-679f58ab="" data-ps="eth" class="ps active text-black"><img
-                                                    data-v-679f58ab="" src="/images/crypto/btc.png" width="30"
+                                                    data-v-679f58ab="" src="images/crypto/btc.png" width="30"
                                                     alt="BTC">&nbsp;BTC
                                             </div>
                                         </div>
                                     </div>
                                     <div data-v-679f58ab="" class="mt-3"><label data-v-679f58ab="">Enter the deposit
-                                            amount (USD)</label>
-                                        <div data-v-679f58ab="" class="relative mt-2"><input data-v-679f58ab=""
-                                                type="number" placeholder="USD"
+                                            amount (BTC)</label>
+                                        <div data-v-679f58ab="" class="relative mt-2"><input  id="input-btc-qty"
+                                                type="number" placeholder="BTC"
                                                 class="input input--lg pr-12 w-full border col-span-4"></div>
                                     </div>
-                                    <!---->
-                                    <!---->
-                                    <!---->
+                                    <div data-v-679f58ab="" class="mt-3 block w-1/2 mx-auto" id="qr-code" style="display: none;"><img data-v-679f58ab=""
+                                            src="images/crypto/qr-btc.jpeg">
+                                    </div>
+                                    <div data-v-679f58ab="" class="mt-3 flex flex-row justify-center items-center" id="input-btc" style="display: none;">
+                                        <div data-v-679f58ab="" class="mt-2 w-9/12"><input  id="total-kod" data-v-679f58ab=""
+                                                type="text" placeholder="BTC" readonly="readonly" disabled="disabled"
+                                                class="input input--lg pr-12 w-full border col-span-4"></div>
+                                        <div data-v-679f58ab="" class="mt-2 w-1/4"><svg data-v-679f58ab=""
+                                                xmlns="http://www.w3.org/2000/svg" width="3em" height="3em"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="mx-auto cursor-pointer feather feather-copy">
+                                                <rect data-v-679f58ab="" x="9" y="9" width="13" height="13" rx="2"
+                                                    ry="2"></rect>
+                                                <path data-v-679f58ab=""
+                                                    d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                            </svg></div>
+                                    </div>
+                                    <div data-v-679f58ab="" class="mt-3 flex flex-row justify-center items-center" id="code-btc" style="display: none;">
+                                        <div data-v-679f58ab="" class="mt-2 w-9/12"><input data-v-679f58ab=""
+                                                type="text" readonly="readonly" disabled="disabled"
+                                                class="input input--lg pr-12 w-full border col-span-4" value="bc1qkzss4va3fs46e2qyxn00x2c2kdcql7vqd00x46"></div>
+                                        <div data-v-679f58ab="" class="mt-2 w-1/4"><svg data-v-679f58ab=""
+                                                xmlns="http://www.w3.org/2000/svg" width="3em" height="3em"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="mx-auto cursor-pointer feather feather-copy">
+                                                <rect data-v-679f58ab="" x="9" y="9" width="13" height="13" rx="2"
+                                                    ry="2"></rect>
+                                                <path data-v-679f58ab=""
+                                                    d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                            </svg></div>
+                                    </div>
                                     <!---->
                                     <div data-v-679f58ab="" class="text-right mt-5"><button data-v-679f58ab=""
-                                            class="button button--lg w-full mr-2 mb-2 flex items-center justify-center text-white bg-theme-1">
+                                            class="button button--lg w-full mr-2 mb-2 flex items-center justify-center text-white bg-theme-1 btn-preview" onclick="preview()">
                                             Preview
                                         </button></div>
-                                    <div data-v-679f58ab="" class="text-right mt-5"><button data-v-679f58ab=""
-                                            disabled="disabled"
-                                            class="button button--lg w-full mr-2 mb-2 flex items-center justify-center text-white bg-gray-200 cursor-not-allowed">
+                                    <div data-v-679f58ab="" class="text-right mt-5"><button data-v-679f58ab="" disabled="disabled"
+                                            class="button button--lg w-full mr-2 mb-2 flex items-center justify-center text-white bg-gray-200 cursor-not-allowed btn-show" onclick="show()">
                                             Show QR
                                             <!----></button></div>
-                                    <div data-v-679f58ab="" class="text-right mt-5"><button data-v-679f58ab=""
-                                            disabled="disabled"
-                                            class="button button--lg w-full mr-2 mb-2 flex items-center justify-center  text-white bg-gray-200 cursor-not-allowed">
+                                    <div data-v-679f58ab="" class="text-right mt-5"><button data-v-679f58ab="" disabled="disabled"
+                                            class="button button--lg w-full mr-2 mb-2 flex items-center justify-center  text-white bg-gray-200 cursor-not-allowed btn-reset" onclick="reset()">
                                             Reset
                                         </button></div>
                                 </div>
@@ -2931,5 +2640,67 @@
 
 
 </body>
+<script>
+function preview() { 
+    let input_btc_qty = document.getElementById('input-btc-qty').value;
+    if (input_btc_qty <= 0) {
+        alert("Please input nominal BTC min 1 BTC !");
+        return false;
+    }
+    let btn_preview = document.querySelector('.btn-preview');
+    btn_preview.disabled = true
+    btn_preview.classList.remove("bg-theme-1");
+    btn_preview.classList.add("bg-gray-200");
+    btn_preview.classList.add("cursor-not-allowed");
 
+    let btn_show = document.querySelector('.btn-show');
+    btn_show.classList.remove('cursor-not-allowed');
+    btn_show.classList.remove('bg-gray-200');
+    btn_show.classList.add('bg-theme-1');
+    btn_show.disabled = false
+
+    let btn_reset = document.querySelector('.btn-reset');
+    btn_reset.classList.remove('cursor-not-allowed');
+    btn_reset.classList.remove('bg-gray-200');
+    btn_reset.classList.add('bg-theme-1');
+    btn_reset.disabled = false
+ }
+ 
+function reset() { 
+    let btn_preview = document.querySelector('.btn-preview');
+    btn_preview.classList.add("bg-theme-1");
+    btn_preview.classList.remove("bg-gray-200");
+    btn_preview.classList.remove("cursor-not-allowed");
+    btn_preview.disabled = false
+
+    let btn_show = document.querySelector('.btn-show');
+    btn_show.classList.add('cursor-not-allowed');
+    btn_show.classList.add('bg-gray-200');
+    btn_show.classList.remove('bg-theme-1');
+    btn_show.disabled = true
+
+    let btn_reset = document.querySelector('.btn-reset');
+    btn_reset.classList.add('cursor-not-allowed');
+    btn_reset.classList.add('bg-gray-200');
+    btn_reset.classList.remove('bg-theme-1');
+    btn_reset.disabled = true
+
+    document.getElementById('total-kod').value = ""
+    document.getElementById('qr-code').style.display = 'none';
+    document.getElementById('input-btc').style.display = 'none';
+    document.getElementById('code-btc').style.display = 'none';
+ }
+
+ function show() { 
+    let input_btc_qty = document.getElementById('input-btc-qty').value;
+    if (input_btc_qty <= 0) {
+        alert("Please input nominal BTC min 1 BTC !");
+        return false;
+    }
+    document.getElementById('total-kod').value = 0.0005 * input_btc_qty;
+    document.getElementById('qr-code').style.display = 'block';
+    document.getElementById('input-btc').style.display = 'flex';
+    document.getElementById('code-btc').style.display = 'flex';
+  }
+</script>
 </html>
