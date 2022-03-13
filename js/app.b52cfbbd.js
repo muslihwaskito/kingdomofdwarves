@@ -1246,7 +1246,7 @@
                 title: "KINGDOM CURRENCY",
                 imgSrc: "jewels.jpg",
                 description:
-                  "The currency of Kingdom of Dwarves will be Crowns (CRWN). Earn CRWN\n            by participating in P2E (Play to Earn) scenarios or by staking your\n            dwarves! You can spend your CRWN in a variety of ways. Cash in some\n            to influence decisions in our Kingdom DAO, or buy accessories such\n            as weapons and armor for your dwarf. Buy into community-driven\n            events such as 1v1 battle competitions where the winner takes the\n            pot!",
+                  "The currency of the Dwarven Kingdom is KOD. Earn KOD by participating in P2E (Play to Earn) scenarios or by stalking your dwarves! You can spend your COD in various ways. KOD is the official currency for playing in community based events such as 1v1 fighting competitions where the winner takes the pot!",
               },
               {
                 title: "TOP QUALITY ART",
@@ -2245,7 +2245,75 @@
       VTimelineItem: fe["a"],
     });
     var ve = function () {
-        
+      var t = this,
+      e = t.$createElement,
+      a = t._self._c || e;
+    return a(
+      "v-container",
+      {
+        staticClass: "my-5",
+        attrs: {
+          fluid: "",
+          id: "faq",
+        },
+      },
+      [
+        a("app-title", {
+          attrs: {
+            title: "PARTNERS",
+          },
+        }),
+        a(
+          "v-expansion-panels",
+          {
+            attrs: {
+              multiple: "",
+              dark: "",
+              accordion: "",
+              focusable: "",
+              id: "exp-panels",
+            },
+            model: {
+              value: t.panel,
+              callback: function (e) {
+                t.panel = e;
+              },
+              expression: "panel",
+            },
+          },
+          t._l(t.items, function (e, n) {
+            return a(
+              "v-expansion-panel",
+              {
+                key: n,
+                staticClass: "panel",
+              },
+              [
+                a(
+                  "v-expansion-panel-header",
+                  {
+                    staticClass: "text-left",
+                  },
+                  [a("h2", [t._v(" " + t._s(e.question) + " ")])]
+                ),
+                a("v-expansion-panel-content", [
+                  a(
+                    "h3",
+                    {
+                      staticClass: "mt-4 text-gold",
+                    },
+                    [t._v(t._s(e.answer))]
+                  ),
+                ]),
+              ],
+              1
+            );
+          }),
+          1
+        ),
+      ],
+      1
+    );
       },
       be = [],
       Ae = {
@@ -2255,56 +2323,7 @@
           return {
             panel: [],
             items: [
-              {
-                question: "Who are these dwarves?",
-                answer:
-                  "\n            The Kingdom of Dwarves is a collection of NFTs backed by the Solana blockchain. Each dwarf is\n            a one-of-a-kind asset that is owned entirely by the purchaser.\n          ",
-              },
-              {
-                question: "What is the total supply?",
-                answer:
-                  "\n            There will be a total of 4000 unique dwarves in total. We will be releasing 500 at a time over the course of 8 Season Drops.\n          ",
-              },
-              {
-                question: "What is the mint price?",
-                answer:
-                  "\n            Whitelist price is 1.5 Solana. General sale price is 2.0 Solana.\n          ",
-              },
-              {
-                question: "When can I mint one?",
-                answer:
-                  "\n            The first two Season Drops have sold out! Season 3 PRE-MINT date is March 9th @11:00am PST. Public mint is the following day: March 10th @11:00am PST.\n          ",
-              },
-              {
-                question: "Is there a mint limit?",
-                answer:
-                  "\n            Currently, there is no limit to the amount of dwarves you can mint. There is a Whitelist Token limit of 1 dwarf per token.\n          ",
-              },
-              {
-                question: "How do I purchase a dwarf?",
-                answer:
-                  "\n            You will need to use a Solana wallet. We would recommend using the Phantom wallet. More info here: https://phantom.app/. Load your wallet with the correct amount of Solana and dont forget to have a small buffer above the amount you plan to spend. This is needed to clear the gas fees on the Solana network (although super small in comparison to ETH). On mint day, you will be able to connect your wallet to the website to purchase!\n          ",
-              },
-              {
-                question: "Is there a rarity system?",
-                answer:
-                  "\n            Yes, we release the rarities for each Season Drop. See here: https://app.kingdomofdwarves.io/rarities\n          ",
-              },
-              {
-                question: "Will there be a secondary market for trading?",
-                answer:
-                  "\n            Yes! You can find both our Whitelist Tokens and Dwarf Collection on Magic Eden\n          ",
-              },
-              {
-                question: "Are there royalties?",
-                answer:
-                  "\n            Yes we have a 5% royalty that is used to fund the project's future and provide opportunities to award the KoD community and Guild.\n          ",
-              },
-              {
-                question: "What does DAO stand for?",
-                answer:
-                  "\n            Decentralized autonomous organization. Think of this as a democratic voting system within the blockchain. We plan to use this system in progressing the Kingdom (Kingdom DAO).\n          ",
-              },
+              
             ],
           };
         },

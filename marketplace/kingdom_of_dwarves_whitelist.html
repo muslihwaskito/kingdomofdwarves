@@ -495,9 +495,9 @@
                                             <div
                                                 class="tw-p-4 tw-bg-gray-200 tw-rounded-md tw-flex tw-justify-between tw-gap-10 tw-flex-col md:tw-flex-row">
                                                 <div class="tw-flex tw-flex-col"><span
-                                                        class="tw-text-light-gray-500 fs-14px">CURRENT BID</span><span
-                                                        class="tw-text-white-1 fw-800 fs-28px">16.25 $KOD</span><span
-                                                        class="tw-text-light-gray-500 fs-12px">~70% SOLD</span></div>
+                                                        class="tw-text-light-gray-500 fs-14px">SUPPLY $KOD</span><span
+                                                        class="tw-text-white-1 fw-800 fs-28px">150 Billion</span><span
+                                                        class="tw-text-light-gray-500 fs-12px" id="value-percent">~0% SOLD</span></div>
                                                 <div class="tw-flex tw-flex-col"><span
                                                         class="tw-text-light-gray-500 fs-14px">AUCTION ENDS IN</span>
                                                     <div class="tw-flex tw-flex-row tw-basis-0 tw-gap-4">
@@ -536,7 +536,7 @@
                                                         class="tw-text-white-1 fw-800 fs-12px">0.0005 USD</span></div>
                                                 <div class="tw-flex tw-flex-col"><span
                                                         class="tw-text-light-gray-500 fs-14px">Time</span><span
-                                                        class="tw-text-white-1 fw-800 fs-12px">March 12, 2022 AT 3:00 PM UTC - March 15, 2022 AT 5:00 PM UTC</span></div>
+                                                        class="tw-text-white-1 fw-800 fs-12px">March 13, 2022 AT 3:00 PM UTC - March 15, 2022 AT 5:00 PM UTC</span></div>
                                                 <div class="tw-flex tw-flex-col"><span
                                                         class="tw-text-light-gray-500 fs-14px">Registration and Purchase</span><span
                                                         class="tw-text-white-1 fw-800 fs-12px"><a href="/">Kingdomofdwarves.com</a></span></div>
@@ -808,6 +808,22 @@
         }
       }, 1000);
       </script>
+      <script>
+        async function getapi() {
+        
+            // Storing response
+            const response = await fetch('/service/get_coin');
+            
+            // Storing data in form of JSON
+            var data = await response.json();
+            if (data.status == 200) {
+                const percent = '~' + data.data.percent + '% SOLD';
+                document.getElementById('value-percent').innerHTML = percent;
+            }
+        }
+    
+        getapi();
+    </script>
 </body>
 
 </html>
