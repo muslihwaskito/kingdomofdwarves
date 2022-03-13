@@ -534,39 +534,6 @@
                 [
                   !t.soldOut && t.$vuetify.breakpoint.xs
                     ? [
-                        a(
-                          "v-list-item",
-                          {
-                            staticClass: "mt-3 mb-2",
-                            staticStyle: { "justify-content": "center" },
-                          },
-                          [
-                            a(
-                              "v-btn",
-                              {
-                                attrs: {
-                                  id: "header-btn",
-                                  medium: "",
-                                  href: t.mintIsLive
-                                    ? "https://app.kingdomofdwarves.io"
-                                    : "#",
-                                },
-                              },
-                              [
-                                t._v(
-                                  " " +
-                                    t._s(
-                                      t.mintIsLive
-                                        ? "MINT NOW!"
-                                        : "MINTING SOON!"
-                                    ) +
-                                    " "
-                                ),
-                              ]
-                            ),
-                          ],
-                          1
-                        ),
                         a("v-divider"),
                       ]
                     : t._e(),
@@ -740,33 +707,13 @@
             internalLinks: [
               { name: "About", href: "#about", icon: "" },
               { name: "Metaverse", href: "#metaverse", icon: "" },
-              { name: "Lore + Podcasts", href: "#lore-and-podcasts", icon: "" },
+              { name: "Lore", href: "#lore-and-podcasts", icon: "" },
               { name: "Features", href: "#standout-features", icon: "" },
               { name: "Roadmap", href: "#roadmap", icon: "" },
               { name: "Team", href: "#team", icon: "" },
-              { name: "FAQ", href: "#faq", icon: "" },
+              { name: "Partners", href: "#faq", icon: "" },
             ],
             appLinks: [
-              {
-                name: "Lore",
-                href: "https://app.kingdomofdwarves.io/lore",
-                icon: "",
-              },
-              {
-                name: "Podcasts",
-                href: "https://app.kingdomofdwarves.io/podcasts",
-                icon: "",
-              },
-              {
-                name: "Rarities",
-                href: "https://app.kingdomofdwarves.io/rarities",
-                icon: "",
-              },
-              {
-                name: "Gallery",
-                href: "https://app.kingdomofdwarves.io/gallery",
-                icon: "",
-              },
             ],
           };
         },
@@ -1409,7 +1356,7 @@
                       md: "10",
                     },
                   },
-                  [n("app-title", { attrs: { title: "LORE AND PODCASTS" } })],
+                  [n("app-title", { attrs: { title: "THE LORE" } })],
                   1
                 ),
               ],
