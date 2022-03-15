@@ -712,6 +712,7 @@
               { name: "Roadmap", href: "#roadmap", icon: "" },
               { name: "Team", href: "#team", icon: "" },
               { name: "Partners", href: "#faq", icon: "" },
+              { name: "Whitepaper", href: "/KINGDOM OF DWARVES.pdf", icon: "" },
             ],
             appLinks: [
             ],
@@ -2031,7 +2032,7 @@
                       icon: "mdi-currency-usd",
                       title: "Q3 2022",
                       lines: [
-                        "Listing Gate.io and Houbi Global ",
+                        "Listing Gate.io and Huobi Global ",
                         "Announce that dwarves holders from Season 1 will earn $KOD at a higher yield rate than subsequent seasons.",
                         "Provide Arts Scholarships to NFT Kingdom Of Dwarves holders and community members.",
                         "Gather creative work from artists in the community and invite them to help build the world of KoD together.",
