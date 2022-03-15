@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="https://etherconnect.co/css/app.css?id=f86d3d742df17d6c4af7" rel="stylesheet">
+    <link href="https://etherconnect.co/css/custom.css?id=5055436a4e4dbf1b0d32" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/kod-logo-favicon.png" type="image/x-icon">
+    <style type="text/css">
+        #nprogress {
+            pointer-events: none;
+        }
+
+        #nprogress .bar {
+            background: #29d;
+
+            position: fixed;
+            z-index: 1031;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 2px;
+        }
+
+        #nprogress .peg {
+            display: block;
+            position: absolute;
+            right: 0px;
+            width: 100px;
+            height: 100%;
+            box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+            opacity: 1.0;
+
+            -webkit-transform: rotate(3deg) translate(0px, -4px);
+            -ms-transform: rotate(3deg) translate(0px, -4px);
+            transform: rotate(3deg) translate(0px, -4px);
+        }
+
+        #nprogress .spinner {
+            display: block;
+            position: fixed;
+            z-index: 1031;
+            top: 15px;
+            right: 15px;
+        }
+
+        #nprogress .spinner-icon {
+            width: 18px;
+            height: 18px;
+            box-sizing: border-box;
+
+            border: solid 2px transparent;
+            border-top-color: #29d;
+            border-left-color: #29d;
+            border-radius: 50%;
+
+            -webkit-animation: nprogress-spinner 400ms linear infinite;
+            animation: nprogress-spinner 400ms linear infinite;
+        }
+
+        .nprogress-custom-parent {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .nprogress-custom-parent #nprogress .spinner,
+        .nprogress-custom-parent #nprogress .bar {
+            position: absolute;
+        }
+
+        @-webkit-keyframes nprogress-spinner {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes nprogress-spinner {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <title>Dashboard | Kingdom of dwarves</title>
+</head>
+
+<body class="app" style="background-color: #09080d;">
+    <div data-v-ecbce4ec="">
+        <div data-v-5a83a465="" data-v-ecbce4ec="" class="mobile-menu md:hidden">
+            <div data-v-5a83a465="" class="mobile-menu-bar"><a data-v-5a83a465=""
+                href="/" class="flex mr-auto" style="font-size: 1.5rem; font-weight: 600;">KINGDOM OF DWARVES </a> <a data-v-5a83a465=""
+                    href="javascript:;" id="mobile-menu-toggler"><svg data-v-5a83a465=""
+                        xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="w-8 h-8 text-white transform -rotate-90 feather feather-bar-chart-2">
+                        <line data-v-5a83a465="" x1="18" y1="20" x2="18" y2="10"></line>
+                        <line data-v-5a83a465="" x1="12" y1="20" x2="12" y2="4"></line>
+                        <line data-v-5a83a465="" x1="6" y1="20" x2="6" y2="14"></line>
+                    </svg></a></div>
+            <ul data-v-5a83a465="" class="border-t border-theme-24 py-5 hidden">
+                <li data-v-5a83a465=""><a data-v-5a83a465="" href="/" class="menu">
+                        <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-home">
+                                <path data-v-5a83a465="" d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline data-v-5a83a465="" points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg></div>
+                        <div data-v-5a83a465="" class="menu__title"> ECC Dashboard</div>
+                    </a></li>
+                <li data-v-5a83a465=""><a data-v-5a83a465="" href="https://etherconnect.co/panda/dashboard"
+                        class="menu">
+                        <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-home">
+                                <path data-v-5a83a465="" d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline data-v-5a83a465="" points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg></div>
+                        <div data-v-5a83a465="" class="menu__title"> Dashboard</div>
+                    </a> <a data-v-5a83a465="" href="javascript:;" class="menu" style="display: none;">
+                        <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-home">
+                                <path data-v-5a83a465="" d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline data-v-5a83a465="" points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg></div>
+                        <div data-v-5a83a465="" class="menu__title">
+                            Dashboard
+                            <i data-v-5a83a465="" data-feather="chevron-down" class="menu__sub-icon"></i></div>
+                    </a>
+                    <!---->
+                </li>
+                <li data-v-5a83a465=""><a data-v-5a83a465="" href="javascript:void(0)" class="menu"
+                        style="display: none;">
+                        <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-log-in">
+                                <path data-v-5a83a465="" d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                                <polyline data-v-5a83a465="" points="10 17 15 12 10 7"></polyline>
+                                <line data-v-5a83a465="" x1="15" y1="12" x2="3" y2="12"></line>
+                            </svg></div>
+                        <div data-v-5a83a465="" class="menu__title"> Buy</div>
+                    </a> <a data-v-5a83a465="" href="javascript:;" class="menu">
+                        <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-log-in">
+                                <path data-v-5a83a465="" d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                                <polyline data-v-5a83a465="" points="10 17 15 12 10 7"></polyline>
+                                <line data-v-5a83a465="" x1="15" y1="12" x2="3" y2="12"></line>
+                            </svg></div>
+                        <div data-v-5a83a465="" class="menu__title">
+                            Buy
+                            <i data-v-5a83a465="" data-feather="chevron-down" class="menu__sub-icon"></i></div>
+                    </a>
+                    <ul data-v-5a83a465="">
+                        <li data-v-5a83a465=""><a data-v-5a83a465="" href="https://etherconnect.co/panda/deposit/eth"
+                                class="menu">
+                                <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                        xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
+                                        <polyline data-v-5a83a465="" points="22 12 18 12 15 21 9 3 6 12 2 12">
+                                        </polyline>
+                                    </svg></div>
+                                <div data-v-5a83a465="" class="menu__title"> Ethereum (Erc20)</div>
+                            </a>
+                            <!---->
+                        </li>
+                        <li data-v-5a83a465=""><a data-v-5a83a465="" href="https://etherconnect.co/panda/deposit/bsc"
+                                class="menu">
+                                <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                        xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
+                                        <polyline data-v-5a83a465="" points="22 12 18 12 15 21 9 3 6 12 2 12">
+                                        </polyline>
+                                    </svg></div>
+                                <div data-v-5a83a465="" class="menu__title"> BNB (Binance Smart Chain)</div>
+                            </a>
+                            <!---->
+                        </li>
+                        <li data-v-5a83a465=""><a data-v-5a83a465="" href="https://etherconnect.co/panda/deposit/btc"
+                                class="menu">
+                                <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                        xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
+                                        <polyline data-v-5a83a465="" points="22 12 18 12 15 21 9 3 6 12 2 12">
+                                        </polyline>
+                                    </svg></div>
+                                <div data-v-5a83a465="" class="menu__title"> BTC (Bitcoin)</div>
+                            </a>
+                            <!---->
+                        </li>
+                        <li data-v-5a83a465=""><a data-v-5a83a465="" href="https://etherconnect.co/panda/deposit/tron"
+                                class="menu">
+                                <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                        xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
+                                        <polyline data-v-5a83a465="" points="22 12 18 12 15 21 9 3 6 12 2 12">
+                                        </polyline>
+                                    </svg></div>
+                                <div data-v-5a83a465="" class="menu__title"> TRX (Tron)</div>
+                            </a>
+                            <!---->
+                        </li>
+                    </ul>
+                </li>
+                <li data-v-5a83a465=""><a data-v-5a83a465="" href="javascript:void(0)" class="menu"
+                        style="display: none;">
+                        <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-users">
+                                <path data-v-5a83a465="" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle data-v-5a83a465="" cx="9" cy="7" r="4"></circle>
+                                <path data-v-5a83a465="" d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path data-v-5a83a465="" d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg></div>
+                        <div data-v-5a83a465="" class="menu__title"> Team</div>
+                    </a> <a data-v-5a83a465="" href="javascript:;" class="menu">
+                        <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-users">
+                                <path data-v-5a83a465="" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle data-v-5a83a465="" cx="9" cy="7" r="4"></circle>
+                                <path data-v-5a83a465="" d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path data-v-5a83a465="" d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg></div>
+                        <div data-v-5a83a465="" class="menu__title">
+                            Team
+                            <i data-v-5a83a465="" data-feather="chevron-down" class="menu__sub-icon"></i></div>
+                    </a>
+                    <ul data-v-5a83a465="">
+                        <li data-v-5a83a465=""><a data-v-5a83a465="" href="https://etherconnect.co/panda/team/direct"
+                                class="menu">
+                                <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                        xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-git-pull-request">
+                                        <circle data-v-5a83a465="" cx="18" cy="18" r="3"></circle>
+                                        <circle data-v-5a83a465="" cx="6" cy="6" r="3"></circle>
+                                        <path data-v-5a83a465="" d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                                        <line data-v-5a83a465="" x1="6" y1="9" x2="6" y2="21"></line>
+                                    </svg></div>
+                                <div data-v-5a83a465="" class="menu__title"> Direct</div>
+                            </a>
+                            <!---->
+                        </li>
+                        <li data-v-5a83a465=""><a data-v-5a83a465="" href="https://etherconnect.co/panda/team/all-team"
+                                class="menu">
+                                <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                        xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-sliders">
+                                        <line data-v-5a83a465="" x1="4" y1="21" x2="4" y2="14"></line>
+                                        <line data-v-5a83a465="" x1="4" y1="10" x2="4" y2="3"></line>
+                                        <line data-v-5a83a465="" x1="12" y1="21" x2="12" y2="12"></line>
+                                        <line data-v-5a83a465="" x1="12" y1="8" x2="12" y2="3"></line>
+                                        <line data-v-5a83a465="" x1="20" y1="21" x2="20" y2="16"></line>
+                                        <line data-v-5a83a465="" x1="20" y1="12" x2="20" y2="3"></line>
+                                        <line data-v-5a83a465="" x1="1" y1="14" x2="7" y2="14"></line>
+                                        <line data-v-5a83a465="" x1="9" y1="8" x2="15" y2="8"></line>
+                                        <line data-v-5a83a465="" x1="17" y1="16" x2="23" y2="16"></line>
+                                    </svg></div>
+                                <div data-v-5a83a465="" class="menu__title"> All Team</div>
+                            </a>
+                            <!---->
+                        </li>
+                    </ul>
+                </li>
+                <li data-v-5a83a465=""><a data-v-5a83a465="" href="javascript:void(0)" class="menu"
+                        style="display: none;">
+                        <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-dollar-sign">
+                                <line data-v-5a83a465="" x1="12" y1="1" x2="12" y2="23"></line>
+                                <path data-v-5a83a465="" d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg></div>
+                        <div data-v-5a83a465="" class="menu__title"> Operation History</div>
+                    </a> <a data-v-5a83a465="" href="javascript:;" class="menu">
+                        <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-dollar-sign">
+                                <line data-v-5a83a465="" x1="12" y1="1" x2="12" y2="23"></line>
+                                <path data-v-5a83a465="" d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg></div>
+                        <div data-v-5a83a465="" class="menu__title">
+                            Operation History
+                            <i data-v-5a83a465="" data-feather="chevron-down" class="menu__sub-icon"></i></div>
+                    </a>
+                    <ul data-v-5a83a465="">
+                        <li data-v-5a83a465=""><a data-v-5a83a465=""
+                                href="https://etherconnect.co/panda/history/deposit" class="menu">
+                                <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                        xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in">
+                                        <path data-v-5a83a465="" d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                                        <polyline data-v-5a83a465="" points="10 17 15 12 10 7"></polyline>
+                                        <line data-v-5a83a465="" x1="15" y1="12" x2="3" y2="12"></line>
+                                    </svg></div>
+                                <div data-v-5a83a465="" class="menu__title"> Deposit History</div>
+                            </a>
+                            <!---->
+                        </li>
+                    </ul>
+                </li>
+                <li data-v-5a83a465=""><a data-v-5a83a465="" href="javascript:void(0)" class="menu"
+                        style="display: none;">
+                        <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-activity">
+                                <polyline data-v-5a83a465="" points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg></div>
+                        <div data-v-5a83a465="" class="menu__title"> Earnings</div>
+                    </a> <a data-v-5a83a465="" href="javascript:;" class="menu">
+                        <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-activity">
+                                <polyline data-v-5a83a465="" points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg></div>
+                        <div data-v-5a83a465="" class="menu__title">
+                            Earnings
+                            <i data-v-5a83a465="" data-feather="chevron-down" class="menu__sub-icon"></i></div>
+                    </a>
+                    <ul data-v-5a83a465="">
+                        <li data-v-5a83a465=""><a data-v-5a83a465="" href="https://etherconnect.co/panda/earnings/level"
+                                class="menu">
+                                <div data-v-5a83a465="" class="menu__icon"><svg data-v-5a83a465=""
+                                        xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-git-merge">
+                                        <circle data-v-5a83a465="" cx="18" cy="18" r="3"></circle>
+                                        <circle data-v-5a83a465="" cx="6" cy="6" r="3"></circle>
+                                        <path data-v-5a83a465="" d="M6 21V9a9 9 0 0 0 9 9"></path>
+                                    </svg></div>
+                                <div data-v-5a83a465="" class="menu__title"> Level Earning</div>
+                            </a>
+                            <!---->
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div data-v-ecbce4ec="" class="flex">
+            <div data-v-ecbce4ec="" class="content" style="background-color: #120c18;">
+                <div data-v-ef6d96aa="" data-v-ecbce4ec="" class="top-bar">
+                    <div data-v-ef6d96aa="" class="-intro-x breadcrumb mr-auto hidden sm:flex"><a data-v-ef6d96aa=""
+                            href="/" style="font-size: 1.5rem; font-weight: 600;">KINGDOM OF DWARVES</a>
+                    </div>
+                </div>
+                <div data-v-509cadfb="" class="grid grid-cols-12 gap-6" data-v-ecbce4ec="">
+                    <div data-v-509cadfb="" class="col-span-12 grid grid-cols-12 gap-6">
+                        <div data-v-509cadfb=""
+                            class="col-span-12 mt-2 flex flex-col justify-center items-center text-2xl font-bold"><span
+                                data-v-509cadfb="">Presale is Live </span></div>
+                        <div data-v-509cadfb=""
+                            class="col-span-12 mt-2 flex flex-col justify-center items-center text-2xl font-bold">
+                            <div data-v-509cadfb="" class="intro-y box mt-5 md:w-1/2 w-full pb-5" style="background-color: #1c1326;">
+                                <div data-v-509cadfb=""
+                                    class="flex flex-col items-center p-5 border-b border-gray-200 dark:border-dark-5 w-auto text-center">
+                                    <div data-v-509cadfb="">
+                                        $KOD
+                                    </div>
+                                    <div data-v-509cadfb="">
+                                        <h2 data-v-509cadfb="" class="font-medium text-xl" id="value-kod">
+                                            0
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div data-v-509cadfb="" id="progressbar-label" class="p-5" style="margin-top: 43px;">
+                                    <div data-v-509cadfb="" class="w-full h-5 bg-gray-400 dark:bg-dark-1 rounded mt-3">
+                                        <div data-v-509cadfb=""
+                                            class=" h-full bg-theme-1 rounded text-center text-base text-white"
+                                            style="height: 120%; width: 0%;" id="value-percent">
+                                            0%
+                                        </div> <span data-v-509cadfb="" class="sold"></span> <span data-v-509cadfb=""
+                                            class="min_val">Sale Raised</span> <span data-v-509cadfb=""
+                                            class="max_val">Presale Cap</span> <span data-v-509cadfb=""
+                                            class="min_val">Sale Raised</span> <span data-v-509cadfb=""
+                                            class="min_val_raise" id="value-rate">0</span> <span data-v-509cadfb=""
+                                            class="max_val_total">100 Billion</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-v-509cadfb=""
+                            class="col-span-12 flex flex-col justify-center items-center h-full border">
+                            <div data-v-679f58ab="" class="text-right mt-5"><a data-v-679f58ab=""
+                                class="button button--lg w-full mr-2 mb-2 flex items-center justify-center text-white bg-theme-1 btn-preview" href="/presale/btc">
+                                BUY From BTC
+                            </a></div>
+                            <div data-v-679f58ab="" class="text-right mt-5"><a data-v-679f58ab=""
+                                class="button button--lg w-full mr-2 mb-2 flex items-center justify-center text-white bg-theme-6 btn-preview" href="/presale/eth">
+                                BUY From ETH
+                            </a></div>
+                            <div data-v-679f58ab="" class="text-right mt-5"><a data-v-679f58ab=""
+                                class="button button--lg w-full mr-2 mb-2 flex items-center justify-center text-white bg-theme-7 btn-preview" href="/presale/bnb">
+                                BUY From BNB
+                            </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-v-458089bf="" data-v-ecbce4ec=""></div>
+    </div>
+</body>
+<script>
+    async function getapi() {
+    
+        // Storing response
+        const response = await fetch('/service/get_coin');
+        
+        // Storing data in form of JSON
+        var data = await response.json();
+        if (data.status == 200) {
+            const percent = data.data.percent + '%';
+            let data_sold = data.data.sold
+            document.getElementById('value-kod').innerHTML = data_sold;
+            document.getElementById('value-percent').innerHTML = percent;
+            document.getElementById('value-percent').style.width = percent;
+            document.getElementById('value-rate').innerHTML = data_sold;
+        }
+    }
+
+    getapi();
+</script>
+
+</html>
