@@ -1836,9 +1836,9 @@
             mintIsLive: !1,
             showWarningText: !1,
             mintApproaching: Xt > new Date(),
-            magicEdenWLBtnText: "Buy A Token",
+            magicEdenWLBtnText: "Buy Pancakeswap",
             magicEdenWLBtnHref:
-              "/marketplace/kingdom_of_dwarves_whitelist",
+              "http://pancakeswap.finance/swap/0x743c72364377c30e2F4a6d0a89f5cdC5167444C4",
             magicEdenDwarfBtnText: "Buy A Dwarf",
             magicEdenDwarfBtnHref:
               "/marketplace/kingdom_of_dwarves",
